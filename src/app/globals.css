@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-navy: #1a365d;
+  --color-navy-dark: #0f2442;
+  --color-navy-light: #2c4a7c;
+
+  /* Accent Colors */
+  --color-gold: #b8860b;
+  --color-gold-light: #d4a732;
+  --color-gold-dark: #8b6914;
+
+  /* Neutral Colors */
+  --color-cream: #faf9f6;
+  --color-cream-dark: #f5f3ed;
+  --color-warm-gray: #6b7280;
+  --color-warm-gray-light: #9ca3af;
+  --color-charcoal: #374151;
+
+  /* Supplementary */
+  --color-sage: #7c9082;
+  --color-sage-light: #a3b5a8;
+  --color-burgundy: #722f37;
+
+  /* Semantic */
+  --color-success: #059669;
+  --color-error: #dc2626;
+  --color-warning: #d97706;
+
+  /* Fonts */
+  --font-heading: 'Libre Baskerville', Georgia, serif;
+  --font-body: 'Source Sans 3', -apple-system, sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-cream text-charcoal font-body;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  /* Accessibility - Font Size */
+  html.text-large {
+    font-size: 112.5%; /* 18px */
+  }
+
+  html.text-x-large {
+    font-size: 125%; /* 20px */
+  }
+
+  /* Accessibility - High Contrast */
+  html.high-contrast {
+    --color-navy: #0a1929;
+    --color-gold: #ffc107;
+    --color-cream: #ffffff;
+  }
+
+  html.high-contrast body {
+    @apply bg-white;
+  }
+
+  html.high-contrast a {
+    text-decoration: underline;
+  }
+
+  /* Accessibility - Reduced Motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  html.reduce-motion *,
+  html.reduce-motion ::before,
+  html.reduce-motion ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gold hover:bg-gold-dark text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-navy hover:bg-navy-dark text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+  }
+
+  .btn-outline {
+    @apply border-2 border-navy text-navy hover:bg-navy hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 transition-shadow hover:shadow-lg;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Rich Text Editor Styles */
+.ProseMirror {
+  @apply min-h-[300px] outline-none;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  @apply text-gray-400;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+/* Leaflet Map Styles */
+.leaflet-container {
+  @apply rounded-lg;
+}

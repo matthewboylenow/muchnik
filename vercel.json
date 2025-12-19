@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "regions": ["iad1"],
+  "env": {
+    "DATABASE_URL": "@database_url",
+    "NEXTAUTH_SECRET": "@nextauth_secret",
+    "NEXTAUTH_URL": "@nextauth_url",
+    "BUNNY_LIBRARY_ID": "@bunny_library_id",
+    "BUNNY_API_KEY": "@bunny_api_key",
+    "BUNNY_CDN_HOSTNAME": "@bunny_cdn_hostname"
+  }
+}
