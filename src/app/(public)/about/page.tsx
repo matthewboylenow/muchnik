@@ -13,13 +13,25 @@ export default function AboutPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-navy text-white py-16">
-        <div className="container-custom">
-          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">About Our Firm</h1>
-          <p className="text-lg text-gray-200 max-w-3xl">
-            For more than 30 years, Muchnik Elder Law P.C. has been dedicated to helping families
-            navigate the complexities of Elder Law, Estate Planning, and Medicaid Planning.
-          </p>
+      <section className="relative bg-navy text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <Image
+            src="/images/about/about-hero.jpg"
+            alt="About Muchnik Elder Law"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="relative container-custom py-20 md:py-28">
+          <div className="max-w-4xl">
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              About Our Firm
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-100 leading-relaxed">
+              For more than 30 years, Muchnik Elder Law P.C. has been dedicated to helping families
+              navigate the complexities of Elder Law, Estate Planning, and Medicaid Planning.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -27,26 +39,21 @@ export default function AboutPage() {
       <section className="section-padding bg-cream">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-3xl font-bold text-navy mb-6 text-center">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-8 text-center">
               Our Story
             </h2>
-            <div className="prose prose-lg max-w-none text-charcoal space-y-4">
-              <p>
-                Muchnik Elder Law P.C. was founded with a simple mission: to provide compassionate,
-                expert legal guidance to families facing the challenges of aging and estate
-                planning.
-              </p>
-              <p>
-                Our firm specializes in Elder Law, Medicaid Planning, Estate Planning, Special Needs
-                Planning, Guardianships, and Real Estate. We understand that these areas of law can
-                be complex and overwhelming, which is why we take the time to educate our clients
-                and guide them through every step of the process.
-              </p>
-              <p>
-                With offices in Staten Island, Manhattan, and New Jersey, we serve families
-                throughout the tri-state area. Our multilingual staff can assist clients in English,
-                Russian, and Ukrainian.
-              </p>
+            <div className="bg-white rounded-xl p-8 md:p-12 shadow-lg">
+              <div className="prose prose-lg max-w-none text-charcoal space-y-6">
+                <p className="text-xl leading-relaxed">
+                  For more than 30 years, Muchnik Elder Law P.C. has worked with clients at crucial times in their lives. We provide straightforward answers to our clients' questions.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  We are experienced in sophisticated, complex estate planning and settlements. Many of our clients come to us referred by former clients and by our professional colleagues.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  We treat each client as an individual with unique legal challenges. With offices in Staten Island, Manhattan, and New Jersey, we serve families throughout the tri-state area.
+                </p>
+              </div>
             </div>
           </div>
         </div>

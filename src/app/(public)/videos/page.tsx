@@ -12,22 +12,36 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic';
 
 export default async function VideosPage() {
-  const publishedVideos = await db
-    .select()
-    .from(videos)
-    .where(eq(videos.published, true))
-    .orderBy(asc(videos.order));
+  let publishedVideos: any[] = [];
+
+  try {
+    publishedVideos = await db
+      .select()
+      .from(videos)
+      .where(eq(videos.published, true))
+      .orderBy(asc(videos.order));
+  } catch (error) {
+    console.error('Error fetching videos:', error);
+    // Continue with empty array - will show empty state
+  }
 
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-navy text-white py-16">
-        <div className="container-custom">
-          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">Educational Videos</h1>
-          <p className="text-lg text-gray-200 max-w-3xl">
-            Learn about Elder Law, Estate Planning, and Medicaid Planning through our informative
-            video library.
-          </p>
+      <section className="relative bg-navy text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-gradient-to-br from-gold/20 to-transparent"></div>
+        </div>
+        <div className="relative container-custom py-20 md:py-28">
+          <div className="max-w-4xl">
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Educational Videos
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-100 leading-relaxed">
+              Learn about Elder Law, Estate Planning, and Medicaid Planning through our informative
+              video library.
+            </p>
+          </div>
         </div>
       </section>
 
