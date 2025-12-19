@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: 'Estate Planning, Trusts & Wills',
   description:
     'Comprehensive estate planning services including wills, trusts, and advance directives. Protect your legacy with expert legal guidance.',
+  openGraph: {
+    title: 'Estate Planning, Trusts & Wills | Muchnik Elder Law P.C.',
+    description: 'Comprehensive estate planning services including wills, trusts, and advance directives.',
+    images: ['/images/practice-areas/estate-planning.jpg'],
+  },
 };
 
 export default function EstatePlanningPage() {

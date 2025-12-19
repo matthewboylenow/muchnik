@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { ContactForm } from '@/components/sections/ContactForm';
 import { locations } from '@/data/locations';
+import { ClientMap } from '@/components/ui/ClientMap';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
@@ -42,17 +43,10 @@ export default function ContactPage() {
                   <div key={location.id} className="bg-white rounded-xl overflow-hidden shadow-lg">
                     {/* Map Embed */}
                     <div className="h-64 w-full">
-                      <iframe
-                        src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}&q=${encodeURIComponent(
-                          `${location.address}, ${location.city}, ${location.state} ${location.zip}`
-                        )}&zoom=15`}
-                        width="100%"
+                      <ClientMap
+                        locations={[location]}
+                        zoom={15}
                         height="100%"
-                        style={{ border: 0 }}
-                        allowFullScreen
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                        title={`Map of ${location.name}`}
                       />
                     </div>
 

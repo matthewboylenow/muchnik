@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
@@ -73,9 +74,10 @@ export default function RootLayout({
       </head>
       <body>
         <Header />
-        <main className="min-h-screen pt-[120px]">{children}</main>
+        <main className="min-h-screen pt-20">{children}</main>
         <Footer />
         <AccessibilityWidget />
+        <Analytics />
       </body>
     </html>
   );

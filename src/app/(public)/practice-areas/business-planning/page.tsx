@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: 'Business Planning',
   description:
     'Business formation, purchase, sale, and succession planning services. Expert legal counsel for your business needs.',
+  openGraph: {
+    title: 'Business Planning | Muchnik Elder Law P.C.',
+    description: 'Business formation, purchase, sale, and succession planning services. Expert legal counsel for your business needs.',
+    images: ['/images/practice-areas/business-planning.jpg'],
+  },
 };
 
 export default function BusinessPlanningPage() {

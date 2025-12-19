@@ -69,14 +69,49 @@ At Muchnik Elder Law, we will educate you on your rights and options so that you
     id: 'business-planning',
     title: 'Business Planning',
     shortDescription: 'Assisting clients in formation, purchase, or sale of a business',
-    fullDescription: `Assisting clients in the formation, purchase or sale of a business; business consulting and preparation of shareholder and partnership agreements; providing for the smooth transfer of a business.`,
+    fullDescription: `Whether you're starting a new venture, acquiring an existing business, or planning for succession, proper legal guidance is essential for protecting your interests and ensuring long-term success.
+
+At Muchnik Elder Law, we provide comprehensive business planning services tailored to your specific needs. We assist clients through every stage of the business lifecycle, from initial formation and entity selection (LLC, corporation, partnership) to growth strategies and eventual transition or sale.
+
+Our business planning services include:
+
+• Business formation and entity structuring
+• Purchase and sale agreements
+• Shareholder and partnership agreements
+• Operating agreements and corporate bylaws
+• Business succession planning
+• Buy-sell agreements
+• Contract review and negotiation
+• Business consulting and strategic planning
+
+We work closely with your accountants and financial advisors to ensure that your business structure optimizes both legal protection and tax efficiency. Our goal is to help you build a solid foundation for your business while planning for the smooth transfer of ownership when the time comes.
+
+With decades of experience serving business owners throughout New York and New Jersey, we understand the unique challenges entrepreneurs face. We're committed to providing practical, cost-effective legal solutions that support your business objectives.`,
     image: '/images/practice-areas/business-planning.jpg',
   },
   {
     id: 'tax-law',
     title: 'Tax Law',
     shortDescription: 'Reduce or eliminate estate and capital gains taxes',
-    fullDescription: `In consultation with your accountant, reduce or eliminate estate and capital gains taxes.`,
+    fullDescription: `Strategic tax planning is a critical component of protecting your wealth and ensuring that your hard-earned assets benefit your loved ones rather than being unnecessarily diminished by taxes.
+
+At Muchnik Elder Law, we work in close consultation with your accountant and financial advisors to develop comprehensive tax minimization strategies tailored to your unique circumstances. Our focus is on legitimate, time-tested methods to reduce or eliminate estate taxes, gift taxes, and capital gains taxes.
+
+Our tax planning services include:
+
+• Estate tax reduction strategies
+• Gift tax planning and annual exclusion strategies
+• Capital gains tax minimization
+• Generation-skipping transfer tax planning
+• Charitable giving strategies for tax benefits
+• Irrevocable life insurance trusts (ILITs)
+• Grantor retained annuity trusts (GRATs)
+• Qualified personal residence trusts (QPRTs)
+• Family limited partnerships and LLCs for tax efficiency
+
+We stay current with ever-changing tax laws and regularly review our clients' plans to ensure they remain optimized under current regulations. By coordinating with your existing team of financial professionals, we ensure that all aspects of your financial plan work together seamlessly.
+
+The best time to implement tax-saving strategies is before a taxable event occurs. Whether you're planning your estate, considering a significant asset sale, or looking to transfer wealth to the next generation, we can help you navigate the complex tax landscape and preserve more of your wealth for your intended beneficiaries.`,
     image: '/images/practice-areas/tax-law.jpg',
   },
 ];

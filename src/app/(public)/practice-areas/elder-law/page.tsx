@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: 'Elder Law & Medicaid Planning',
   description:
     'Expert Elder Law and Medicaid planning services to help preserve your assets and plan for long-term care. Over 30 years of experience serving New York and New Jersey.',
+  openGraph: {
+    title: 'Elder Law & Medicaid Planning | Muchnik Elder Law P.C.',
+    description: 'Expert Elder Law and Medicaid planning services to help preserve your assets and plan for long-term care.',
+    images: ['/images/practice-areas/elder-law.jpg'],
+  },
 };
 
 export default function ElderLawPage() {

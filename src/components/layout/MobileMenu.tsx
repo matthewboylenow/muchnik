@@ -9,10 +9,12 @@ import { navigation } from '@/data/navigation';
 
 export function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const [expandedItem, setExpandedItem] = useState<string | null>(null);
   const pathname = usePathname();
 
   useEffect(() => {
     setIsOpen(false);
+    setExpandedItem(null);
   }, [pathname]);
 
   useEffect(() => {
@@ -27,7 +29,7 @@ export function MobileMenu() {
     <div className="md:hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="text-white p-2"
+        className="text-navy p-2"
         aria-label="Toggle menu"
         aria-expanded={isOpen}
       >
@@ -86,9 +88,60 @@ export function MobileMenu() {
                   </button>
                 </div>
 
-                <nav className="flex flex-col px-4 py-8 space-y-4">
+                <nav className="flex flex-col px-4 py-8 space-y-2">
                   {navigation.map((item) => {
                     const isActive = pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href));
+                    const hasChildren = 'children' in item && item.children && item.children.length > 0;
+                    const isExpanded = expandedItem === item.name;
+
+                    if (hasChildren) {
+                      return (
+                        <div key={item.name}>
+                          <button
+                            onClick={() => setExpandedItem(isExpanded ? null : item.name)}
+                            className={cn(
+                              'w-full flex items-center justify-between text-lg font-medium transition-colors py-2',
+                              isActive ? 'text-gold' : 'text-white'
+                            )}
+                          >
+                            {item.name}
+                            <motion.svg
+                              animate={{ rotate: isExpanded ? 180 : 0 }}
+                              transition={{ duration: 0.2 }}
+                              className="w-5 h-5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </motion.svg>
+                          </button>
+                          <AnimatePresence>
+                            {isExpanded && (
+                              <motion.div
+                                initial={{ height: 0, opacity: 0 }}
+                                animate={{ height: 'auto', opacity: 1 }}
+                                exit={{ height: 0, opacity: 0 }}
+                                transition={{ duration: 0.2 }}
+                                className="overflow-hidden"
+                              >
+                                <div className="pl-4 py-2 space-y-2">
+                                  {item.children.map((child: any) => (
+                                    <Link
+                                      key={child.href}
+                                      href={child.href}
+                                      className="block text-sm text-gray-300 hover:text-gold transition-colors py-2"
+                                    >
+                                      {child.name}
+                                    </Link>
+                                  ))}
+                                </div>
+                              </motion.div>
+                            )}
+                          </AnimatePresence>
+                        </div>
+                      );
+                    }
 
                     return (
                       <Link

@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: 'Tax Law',
   description:
     'Estate and capital gains tax planning services. Work with experienced tax attorneys to minimize your tax burden.',
+  openGraph: {
+    title: 'Tax Law | Muchnik Elder Law P.C.',
+    description: 'Estate and capital gains tax planning services. Minimize your tax burden with expert attorneys.',
+    images: ['/images/practice-areas/tax-law.jpg'],
+  },
 };
 
 export default function TaxLawPage() {

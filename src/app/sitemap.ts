@@ -47,13 +47,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
-  // Practice area anchors
+  // Practice area pages
   const practiceAreaPages: MetadataRoute.Sitemap = practiceAreas.map(
     (area) => ({
-      url: `${baseUrl}/practice-areas#${area.id}`,
+      url: `${baseUrl}/practice-areas/${area.id}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
-      priority: 0.7,
+      priority: 0.8,
     })
   );
 

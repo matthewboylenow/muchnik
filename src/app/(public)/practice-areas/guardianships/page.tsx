@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: 'Guardianships',
   description:
     'Expert guardianship legal services in New York and New Jersey. Navigate the guardianship process with experienced attorneys.',
+  openGraph: {
+    title: 'Guardianships | Muchnik Elder Law P.C.',
+    description: 'Expert guardianship legal services in New York and New Jersey.',
+    images: ['/images/practice-areas/guardianships.jpg'],
+  },
 };
 
 export default function GuardianshipsPage() {

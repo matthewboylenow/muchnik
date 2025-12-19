@@ -22,11 +22,11 @@ export function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-navy shadow-lg' : 'bg-navy/95'
+        isScrolled ? 'bg-white shadow-lg' : 'bg-white'
       }`}
     >
       {/* Top Bar */}
-      <div className="bg-navy-dark text-white text-xs py-2">
+      <div className="bg-navy text-white text-xs py-2">
         <div className="container-custom flex flex-wrap justify-between items-center gap-2">
           <div className="flex flex-wrap gap-4">
             {locations.map((location) => (

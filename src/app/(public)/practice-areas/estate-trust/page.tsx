@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: 'Estate & Trust Settlement',
   description:
     'Expert guidance for executors, trustees, and families navigating estate and trust settlement. Achieve just and equitable results.',
+  openGraph: {
+    title: 'Estate & Trust Settlement | Muchnik Elder Law P.C.',
+    description: 'Expert guidance for executors, trustees, and families navigating estate and trust settlement.',
+    images: ['/images/practice-areas/estate-trust.jpg'],
+  },
 };
 
 export default function EstateTrustPage() {

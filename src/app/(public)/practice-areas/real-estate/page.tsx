@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: 'Real Estate Law',
   description:
     'Comprehensive real estate legal services for buying and selling property. Experienced attorneys guiding you through every transaction.',
+  openGraph: {
+    title: 'Real Estate Law | Muchnik Elder Law P.C.',
+    description: 'Comprehensive real estate legal services for buying and selling property.',
+    images: ['/images/practice-areas/real-estate.jpg'],
+  },
 };
 
 export default function RealEstatePage() {
