@@ -67,7 +67,7 @@ export function Navigation() {
 
               {openDropdown === item.name && (
                 <div
-                  className="absolute top-full left-0 mt-2 w-72 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50"
+                  className="absolute top-full left-0 w-72 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50"
                   role="menu"
                   aria-label={`${item.name} submenu`}
                 >

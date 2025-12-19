@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation';
 import { getSession } from '@/lib/auth';
 import Link from 'next/link';
+import { headers } from 'next/headers';
 
 export default async function AdminLayout({
   children,
@@ -8,15 +9,20 @@ export default async function AdminLayout({
   children: React.ReactNode;
 }) {
   const session = await getSession();
+  const headersList = await headers();
+  const pathname = headersList.get('x-pathname') || '';
 
-  // Allow login page without auth
-  // This is handled by checking the pathname on the client, but
-  // for server components we check if we're on the login route
-  const isLoginPage = false; // We'll handle this differently
+  // Allow login page without auth check
+  const isLoginPage = pathname === '/admin/login';
 
-  if (!session) {
+  if (!session && !isLoginPage) {
     // For non-login pages, redirect to login
     redirect('/admin/login');
+  }
+
+  // If on login page, render without layout
+  if (isLoginPage) {
+    return <>{children}</>;
   }
 
   return (
@@ -60,7 +66,7 @@ export default async function AdminLayout({
           </nav>
 
           <div className="mt-8 pt-8 border-t border-navy-light">
-            <p className="text-sm text-gray-300 mb-2">{session.email}</p>
+            <p className="text-sm text-gray-300 mb-2">{session?.email}</p>
             <form action="/api/auth/logout" method="POST">
               <button
                 type="submit"
