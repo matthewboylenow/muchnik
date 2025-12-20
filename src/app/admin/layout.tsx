@@ -58,10 +58,10 @@ export default async function AdminLayout({
               Submissions
             </Link>
             <Link
-              href="/admin/users"
+              href="/admin/analytics"
               className="block py-2 px-4 rounded hover:bg-navy-light transition-colors"
             >
-              Users
+              Analytics
             </Link>
           </nav>
 

@@ -2,29 +2,13 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
 import { Navigation } from './Navigation';
 import { MobileMenu } from './MobileMenu';
 import { locations } from '@/data/locations';
 
 export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg' : 'bg-white'
-      }`}
-    >
+    <header className="bg-white shadow-md relative z-10">
       {/* Top Bar */}
       <div className="bg-navy text-white text-xs py-2">
         <div className="container-custom flex flex-wrap justify-between items-center gap-2">

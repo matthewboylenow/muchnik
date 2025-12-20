@@ -44,7 +44,8 @@
     "react-dom": "^19.2.3",
     "react-leaflet": "^5.0.0",
     "resend": "^6.6.0",
-    "slugify": "^1.6.6"
+    "slugify": "^1.6.6",
+    "unsplash-js": "^7.0.20"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",

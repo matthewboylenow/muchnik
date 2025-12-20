@@ -4,6 +4,7 @@ import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { AccessibilityWidget } from '@/components/accessibility/AccessibilityWidget';
+import { FathomAnalytics } from '@/components/analytics/FathomAnalytics';
 import { LocalBusinessJsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
@@ -74,9 +75,10 @@ export default function RootLayout({
       </head>
       <body>
         <Header />
-        <main className="min-h-screen pt-20">{children}</main>
+        <main className="min-h-screen">{children}</main>
         <Footer />
         <AccessibilityWidget />
+        <FathomAnalytics />
         <Analytics />
       </body>
     </html>

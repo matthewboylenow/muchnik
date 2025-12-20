@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { RichTextEditor } from '@/components/blog/RichTextEditor';
+import { UnsplashPicker } from '@/components/blog/UnsplashPicker';
 import { Button } from '@/components/ui/Button';
 import { Input, Textarea } from '@/components/ui/Input';
 
@@ -12,6 +13,7 @@ export default function NewPostPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [imageUploading, setImageUploading] = useState(false);
+  const [showUnsplashPicker, setShowUnsplashPicker] = useState(false);
 
   const [formData, setFormData] = useState({
     title: '',
@@ -140,17 +142,24 @@ export default function NewPostPage() {
                 onChange={(e) =>
                   setFormData({ ...formData, featuredImage: e.target.value })
                 }
-                placeholder="Image URL or upload below"
+                placeholder="Image URL, upload, or search Unsplash"
               />
             </div>
-            <div>
+            <div className="flex gap-2">
+              <button
+                type="button"
+                onClick={() => setShowUnsplashPicker(true)}
+                className="inline-block bg-gold hover:bg-gold-dark text-white px-4 py-2.5 rounded-lg font-medium transition-colors"
+              >
+                Unsplash
+              </button>
               <label
                 htmlFor="image-upload"
                 className={`inline-block bg-gray-100 hover:bg-gray-200 text-charcoal px-4 py-2.5 rounded-lg font-medium transition-colors cursor-pointer ${
                   imageUploading ? 'opacity-50 cursor-not-allowed' : ''
                 }`}
               >
-                {imageUploading ? 'Uploading...' : 'Upload Image'}
+                {imageUploading ? 'Uploading...' : 'Upload'}
               </label>
               <input
                 id="image-upload"
@@ -172,6 +181,15 @@ export default function NewPostPage() {
             </div>
           )}
         </div>
+
+        {/* Unsplash Picker Modal */}
+        <UnsplashPicker
+          isOpen={showUnsplashPicker}
+          onClose={() => setShowUnsplashPicker(false)}
+          onSelect={(imageUrl) => {
+            setFormData({ ...formData, featuredImage: imageUrl });
+          }}
+        />
 
         {/* Content */}
         <div>

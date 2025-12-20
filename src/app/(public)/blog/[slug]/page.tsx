@@ -8,16 +8,17 @@ import { formatDate } from '@/lib/utils';
 import { Button } from '@/components/ui/Button';
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
   const [post] = await db
     .select()
     .from(posts)
-    .where(and(eq(posts.slug, params.slug), eq(posts.published, true)));
+    .where(and(eq(posts.slug, slug), eq(posts.published, true)));
 
   if (!post) {
     return {
@@ -32,10 +33,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BlogPostPage({ params }: Props) {
+  const { slug } = await params;
   const [post] = await db
     .select()
     .from(posts)
-    .where(and(eq(posts.slug, params.slug), eq(posts.published, true)));
+    .where(and(eq(posts.slug, slug), eq(posts.published, true)));
 
   if (!post) {
     notFound();
