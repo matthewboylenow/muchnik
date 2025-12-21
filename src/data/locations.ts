@@ -11,6 +11,7 @@ export const locations: Location[] = [
     zip: '10314',
     phone: '(718) 442-7004',
     phoneRaw: '7184427004',
+    phoneLabel: 'NY',
     coordinates: { lat: 40.5795, lng: -74.1502 },
   },
   {
@@ -23,6 +24,7 @@ export const locations: Location[] = [
     zip: '10004',
     phone: '(212) 597-2427',
     phoneRaw: '2125972427',
+    phoneLabel: 'NYC',
     coordinates: { lat: 40.7058, lng: -74.0139 },
   },
   {
@@ -35,6 +37,7 @@ export const locations: Location[] = [
     zip: '07869',
     phone: '(201) 582-8014',
     phoneRaw: '2015828014',
+    phoneLabel: 'NJ',
     coordinates: { lat: 40.8423, lng: -74.5874 },
   },
 ];

@@ -3,25 +3,25 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 
 export const metadata: Metadata = {
-  title: 'Tax Law',
+  title: 'Estate Litigation & Will Contests',
   description:
-    'Estate and capital gains tax planning services. Work with experienced tax attorneys to minimize your tax burden.',
+    'Protecting your rights in contested estate matters. Experienced representation in will contests, trust disputes, and estate litigation in NY & NJ.',
   openGraph: {
-    title: 'Tax Law | Muchnik Elder Law P.C.',
-    description: 'Estate and capital gains tax planning services. Minimize your tax burden with expert attorneys.',
-    images: ['/images/practice-areas/tax-law.jpg'],
+    title: 'Estate Litigation & Will Contests | Muchnik Elder Law P.C.',
+    description: 'Experienced representation in will contests, trust disputes, and contested estate matters.',
+    images: ['/images/practice-areas/estate-litigation.jpg'],
   },
 };
 
-export default function TaxLawPage() {
+export default function EstateLitigationPage() {
   return (
     <div>
       {/* Hero Section */}
       <section className="relative bg-navy text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/practice-areas/tax-law.jpg"
-            alt="Tax Law"
+            src="/images/practice-areas/estate-litigation.jpg"
+            alt="Estate Litigation & Will Contests"
             className="w-full h-full object-cover opacity-30"
           />
         </div>
@@ -36,10 +36,10 @@ export default function TaxLawPage() {
               </Link>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Tax Law
+              Estate Litigation & Will Contests
             </h1>
             <p className="text-xl md:text-2xl text-gray-100 font-semibold">
-              Reduce or eliminate estate and capital gains taxes
+              Protecting your rights in contested estate matters
             </p>
           </div>
         </div>
@@ -51,29 +51,25 @@ export default function TaxLawPage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-charcoal leading-relaxed mb-6">
-                Effective tax planning is essential to protecting and growing your wealth. Our Tax Law practice advises individuals, families, business owners, and fiduciaries on strategies to reduce tax liability and avoid costly surprises. We integrate tax analysis into estate planning, business succession, real estate transactions, and charitable giving.
+                Disputes involving a loved one's estate can be emotionally charged and financially significant. Our attorneys represent beneficiaries, executors, administrators, trustees, and family members in contested matters. We handle will contests, trust disputes, claims of undue influence or incapacity, accounting proceedings, and breach of fiduciary duty cases.
               </p>
 
               <p className="text-lg text-charcoal leading-relaxed mb-6">
-                We counsel clients on income, gift, and estate tax considerations and help structure transactions and entities to optimize tax outcomes. Our attorneys prepare and review estate or inheritance tax-related filings and work to prevent issues before they arise.
+                We begin with a careful analysis of the facts, documents, and medical and financial records to evaluate the strength of your position. When possible, we pursue negotiated resolutions or mediation to save time, money, and family relationships. However, when litigation is necessary, we are prepared to advocate aggressively in Surrogate's Court and other courts on your behalf.
               </p>
 
               <p className="text-lg text-charcoal leading-relaxed mb-6">
-                Our focus is on clear guidance, practical strategies, and proactive planning so that taxes become a managed element of your financial life, not an unpleasant surprise.
-              </p>
-
-              <p className="text-xl font-semibold text-navy">
-                Contact us to discuss tax planning strategies that work in coordination with your accountant.
+                Because we have a deep experience in estate planning and administration, we understand both the legal nuances and the human dynamics that often drive these conflicts. Our goal is to protect your rights, safeguard estate assets, and achieve a result that reflects both the law and the realities facing your family.
               </p>
             </div>
 
             {/* CTA Box */}
             <div className="mt-12 bg-white rounded-xl p-8 md:p-12 shadow-lg border-t-4 border-gold">
               <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy mb-4">
-                Minimize Your Tax Burden
+                Facing an Estate Dispute?
               </h2>
               <p className="text-lg text-charcoal mb-6">
-                Contact us to discuss tax planning strategies that work in coordination with your accountant.
+                Schedule a consultation with our experienced estate litigation attorneys to discuss your case and legal options.
               </p>
               <Link href="/contact">
                 <Button size="lg" className="text-base md:text-lg px-8 py-4">
@@ -92,33 +88,33 @@ export default function TaxLawPage() {
             Related Practice Areas
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Link href="/practice-areas/estate-trust" className="group">
+              <div className="bg-cream rounded-lg p-6 h-full hover:shadow-lg transition-shadow">
+                <h3 className="font-heading text-xl font-bold text-navy mb-2 group-hover:text-gold transition-colors">
+                  Estate Administration & Probate
+                </h3>
+                <p className="text-charcoal">
+                  Achieving a just and equitable result in estate settlement.
+                </p>
+              </div>
+            </Link>
             <Link href="/practice-areas/estate-planning" className="group">
               <div className="bg-cream rounded-lg p-6 h-full hover:shadow-lg transition-shadow">
                 <h3 className="font-heading text-xl font-bold text-navy mb-2 group-hover:text-gold transition-colors">
-                  Estate Planning
+                  Estate Planning, Trusts & Wills
                 </h3>
                 <p className="text-charcoal">
-                  Minimize estate taxes through strategic planning.
+                  Plan ahead for the best possible outcome for your family.
                 </p>
               </div>
             </Link>
-            <Link href="/practice-areas/business-planning" className="group">
+            <Link href="/practice-areas/guardianships" className="group">
               <div className="bg-cream rounded-lg p-6 h-full hover:shadow-lg transition-shadow">
                 <h3 className="font-heading text-xl font-bold text-navy mb-2 group-hover:text-gold transition-colors">
-                  Business Planning
+                  Guardianships
                 </h3>
                 <p className="text-charcoal">
-                  Tax-efficient business succession strategies.
-                </p>
-              </div>
-            </Link>
-            <Link href="/practice-areas/real-estate" className="group">
-              <div className="bg-cream rounded-lg p-6 h-full hover:shadow-lg transition-shadow">
-                <h3 className="font-heading text-xl font-bold text-navy mb-2 group-hover:text-gold transition-colors">
-                  Real Estate
-                </h3>
-                <p className="text-charcoal">
-                  Capital gains tax strategies for property sales.
+                  Legal decision-making for those who cannot manage alone.
                 </p>
               </div>
             </Link>

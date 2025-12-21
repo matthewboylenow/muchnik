@@ -53,6 +53,18 @@ export default function SpecialNeedsPage() {
               <p className="text-xl text-charcoal leading-relaxed mb-6">
                 If you are a parent of a young or adult child with disabilities, you do not have to disinherit your child to protect his or her Medicaid or other government benefits related to their disability. At Muchnik Elder Law, we offer a range of planning options to help clients address the special needs of their children and maintain the support their children deserve.
               </p>
+
+              <p className="text-lg text-charcoal leading-relaxed mb-6">
+                Families of individuals with disabilities face unique planning challenges—and opportunities. Our firm helps clients secure long-term financial stability for a loved one with special needs without jeopardizing vital government benefits such as SSI or Medicaid.
+              </p>
+
+              <p className="text-lg text-charcoal leading-relaxed mb-6">
+                We create and implement first-party and third-party Special Needs Trusts (SNTs) tailored to your situation, whether you are setting aside your own funds, managing a personal injury recovery, or structuring an inheritance. These trusts can provide for quality-of-life expenses, therapies, and supports while preserving eligibility for public benefits.
+              </p>
+
+              <p className="text-lg text-charcoal leading-relaxed mb-6">
+                We also coordinate special needs planning with your broader estate plan to protect siblings and other beneficiaries and address who will manage funds and care decisions in the future. Our attorneys help you consider guardianship, supported decision-making, and transition planning so your loved one is supported both financially and personally over a lifetime.
+              </p>
             </div>
 
             {/* CTA Box */}

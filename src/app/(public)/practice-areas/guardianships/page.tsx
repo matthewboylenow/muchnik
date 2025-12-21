@@ -51,11 +51,23 @@ export default function GuardianshipsPage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-charcoal leading-relaxed mb-6">
+                When an adult or child cannot manage their personal or financial affairs, a guardianship may be necessary to protect them.
+              </p>
+
+              <p className="text-lg text-charcoal leading-relaxed mb-6">
                 A guardianship is a legal proceeding in which a Court appoints someone to act as a decision-maker for a person who is unable to manage their own affairs as a direct result of some medical condition or physical infirmity. When a guardianship is appropriate the Court will appoint a Guardian to make personal or financial decisions on behalf of a disabled adult.
               </p>
 
               <p className="text-lg text-charcoal leading-relaxed mb-6">
                 Sometimes a guardianship proceeding is required when a young adult has serious developmental disabilities or traumatic brain injury. Sometimes a guardianship proceeding is required where formerly capable adults are no longer able to care for themselves or their property.
+              </p>
+
+              <p className="text-lg text-charcoal leading-relaxed mb-6">
+                We guide you through the decision of whether guardianship is appropriate and what type is needed—guardian of the person, guardian of the property, or both. We prepare and file all required court papers, appear at hearings, and work with medical and other professionals to present a clear picture of your loved one's needs.
+              </p>
+
+              <p className="text-lg text-charcoal leading-relaxed mb-6">
+                Once a guardian is appointed, we advise on ongoing responsibilities, including reporting, budgeting, and decision-making standards.
               </p>
 
               <p className="text-lg text-charcoal leading-relaxed mb-6">

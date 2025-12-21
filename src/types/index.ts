@@ -8,6 +8,7 @@ export interface Location {
   zip: string;
   phone: string;
   phoneRaw: string;
+  phoneLabel?: string;
   coordinates: {
     lat: number;
     lng: number;

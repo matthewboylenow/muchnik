@@ -3,12 +3,12 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 
 export const metadata: Metadata = {
-  title: 'Estate & Trust Settlement',
+  title: 'Estate Administration & Probate',
   description:
-    'Expert guidance for executors, trustees, and families navigating estate and trust settlement. Achieve just and equitable results.',
+    'Expert guidance for executors, administrators, trustees, and families navigating estate administration and probate. Achieve just and equitable results.',
   openGraph: {
-    title: 'Estate & Trust Settlement | Muchnik Elder Law P.C.',
-    description: 'Expert guidance for executors, trustees, and families navigating estate and trust settlement.',
+    title: 'Estate Administration & Probate | Muchnik Elder Law P.C.',
+    description: 'Expert guidance for executors, administrators, trustees, and families navigating estate administration and probate.',
     images: ['/images/practice-areas/estate-trust.jpg'],
   },
 };
@@ -36,7 +36,7 @@ export default function EstateTrustPage() {
               </Link>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Estate & Trust Settlement
+              Estate Administration & Probate
             </h1>
             <p className="text-xl md:text-2xl text-gray-100 font-semibold">
               Achieving a just and equitable result
@@ -51,7 +51,15 @@ export default function EstateTrustPage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-charcoal leading-relaxed mb-6">
-                In the area of estate settlement we assist family members in understanding and resolving the many issues involved in settling an estate. We advise executors, trustees and Attorneys-in-Fact about the full range of their fiduciary responsibilities. We coordinate the distribution of real estate and other assets.
+                Losing a loved one is difficult enough without the added burden of navigating the legal system alone. Our Estate Administration & Probate team guides executors, administrators, trustees, Attorneys-in-Fact, and families through every step of settling an estate. We handle the technical details and coordinate the distribution of real estate and other estate assets, allowing you to focus on your family and the grieving process.
+              </p>
+
+              <p className="text-lg text-charcoal leading-relaxed mb-6">
+                We assist with probating wills, obtaining appointments as executor or administrator, marshaling and valuing assets, paying valid debts and expenses, filing of any estate or inheritance tax returns, and making proper distributions to beneficiaries. Our firm also helps with non-probate assets, such as jointly held property and accounts with designated beneficiaries, to ensure nothing falls through the cracks.
+              </p>
+
+              <p className="text-lg text-charcoal leading-relaxed mb-6">
+                Whether an estate is straightforward or involves multiple properties, businesses, or cross-border assets, we provide efficient, organized, and transparent administration. We work to minimize delays and disputes. We keep executors, administrators, trustees and Attorneys-in-Fact informed about the full range of their fiduciary responsibilities to help them avoid personal liability while honoring the decedent's wishes.
               </p>
             </div>
 

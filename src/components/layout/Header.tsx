@@ -19,7 +19,7 @@ export function Header() {
                 href={`tel:${location.phoneRaw}`}
                 className="hover:text-gold transition-colors"
               >
-                {location.city}: {location.phone}
+                {location.phoneLabel || location.city}: {location.phone}
               </a>
             ))}
           </div>
@@ -41,7 +41,7 @@ export function Header() {
               alt="Muchnik Elder Law P.C."
               width={500}
               height={287}
-              className="h-12 w-auto"
+              className="h-16 md:h-20 w-auto"
               priority
             />
           </Link>

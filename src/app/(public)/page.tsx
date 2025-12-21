@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/Button';
 import { practiceAreas } from '@/data/practiceAreas';
 import { Card, CardTitle, CardContent } from '@/components/ui/Card';
 import { FadeIn } from '@/components/ui/FadeIn';
-import { ParallaxBackground } from '@/components/ui/ParallaxBackground';
+import { RotatingBackground } from '@/components/ui/RotatingBackground';
 import { ClientMap } from '@/components/ui/ClientMap';
 import { locations } from '@/data/locations';
 
@@ -16,10 +16,14 @@ export default function HomePage() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <div className="relative w-full h-full overflow-hidden">
-            <ParallaxBackground
-              src="/images/hero/elderly-couple.jpg"
-              alt="Elderly couple"
-              speed={0.3}
+            <RotatingBackground
+              images={[
+                '/images/hero/homepage/Staten-Island-Ferry.jpg',
+                '/images/hero/homepage/NY-Appellate-Division-Court.jpg',
+                '/images/hero/homepage/Photoshopped-IMG-0797-3-2-scaled.jpg'
+              ]}
+              alt="Muchnik Elder Law"
+              interval={6000}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/85 to-navy/70"></div>
           </div>

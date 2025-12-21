@@ -51,11 +51,15 @@ export default function EstatePlanningPage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-charcoal leading-relaxed mb-6">
-                Whatever your individual or family situation, we offer a full range of services designed to help you. These services include estate planning such as creating wills, trusts and advance directives such as powers of attorney, health care proxies and living wills.
+                A well-crafted estate plan does more than state who gets what—it protects your family, reduces taxes, and prevents conflict. We help individuals and families design customized wills, trusts, and related documents that reflect their values, protect their loved ones, and minimize court involvement. Whether your estate is modest or complex, we tailor a plan that fits your goals and budget.
               </p>
 
               <p className="text-lg text-charcoal leading-relaxed mb-6">
-                At Muchnik Elder Law, we also inform as to estate and gift tax reduction strategies – as well as strategies that can help you name beneficiaries and identify the best distribution options for estates, retirement accounts, life insurance and family businesses.
+                Our attorneys advise on revocable living trusts, irrevocable trusts, tax-efficient gifting strategies, and planning for business owners, blended families, and second marriages. We also prepare durable powers of attorney, health care proxies, and living wills so your wishes are honored if you become incapacitated.
+              </p>
+
+              <p className="text-lg text-charcoal leading-relaxed mb-6">
+                We focus on clarity and practicality. We explain your options in plain language and ensure your documents work together with beneficiary designations, retirement accounts, and life insurance. With offices in New York and New Jersey, we address the different state laws that can impact your estate and coordinate multi-state planning when needed.
               </p>
 
               <p className="text-xl font-semibold text-navy">
