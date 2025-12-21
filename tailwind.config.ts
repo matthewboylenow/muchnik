@@ -57,9 +57,49 @@ const config: Config = {
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#374151', // charcoal
+            maxWidth: 'none',
+            a: {
+              color: '#b8860b', // gold
+              textDecoration: 'underline',
+              '&:hover': {
+                color: '#8b6914', // gold-dark
+              },
+            },
+            h1: {
+              color: '#1a365d', // navy
+              fontFamily: 'var(--font-heading)',
+            },
+            h2: {
+              color: '#1a365d', // navy
+              fontFamily: 'var(--font-heading)',
+            },
+            h3: {
+              color: '#1a365d', // navy
+              fontFamily: 'var(--font-heading)',
+            },
+            h4: {
+              color: '#1a365d', // navy
+              fontFamily: 'var(--font-heading)',
+            },
+            strong: {
+              color: '#1a365d', // navy
+            },
+            blockquote: {
+              color: '#374151', // charcoal
+              borderLeftColor: '#b8860b', // gold
+            },
+          },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
 
 export default config;

@@ -24,6 +24,7 @@
   "homepage": "https://github.com/matthewboylenow/muchnik#readme",
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
+    "@tailwindcss/typography": "^0.5.19",
     "@tiptap/extension-image": "^3.14.0",
     "@tiptap/extension-link": "^3.14.0",
     "@tiptap/extension-placeholder": "^3.14.0",
