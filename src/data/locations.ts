@@ -3,7 +3,7 @@ import { Location } from '@/types';
 export const locations: Location[] = [
   {
     id: 'staten-island',
-    name: 'Staten Island Office',
+    name: 'New York Office',
     address: '900 South Avenue',
     addressLine2: 'Executive Suites',
     city: 'Staten Island',
@@ -12,11 +12,11 @@ export const locations: Location[] = [
     phone: '(718) 442-7004',
     phoneRaw: '7184427004',
     phoneLabel: 'NY',
-    coordinates: { lat: 40.5795, lng: -74.1502 },
+    coordinates: { lat: 40.6170, lng: -74.1726 },
   },
   {
     id: 'manhattan',
-    name: 'Manhattan Office',
+    name: 'NYC Office',
     address: '11 Broadway',
     addressLine2: 'Suite 615',
     city: 'New York',
@@ -25,7 +25,7 @@ export const locations: Location[] = [
     phone: '(212) 597-2427',
     phoneRaw: '2125972427',
     phoneLabel: 'NYC',
-    coordinates: { lat: 40.7058, lng: -74.0139 },
+    coordinates: { lat: 40.7053, lng: -74.0142 },
   },
   {
     id: 'new-jersey',
@@ -38,7 +38,7 @@ export const locations: Location[] = [
     phone: '(201) 582-8014',
     phoneRaw: '2015828014',
     phoneLabel: 'NJ',
-    coordinates: { lat: 40.8423, lng: -74.5874 },
+    coordinates: { lat: 40.8270, lng: -74.5674 },
   },
 ];
 

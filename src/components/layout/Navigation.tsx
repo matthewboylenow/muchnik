@@ -50,7 +50,7 @@ export function Navigation() {
                 onClick={() => setOpenDropdown(openDropdown === item.name ? null : item.name)}
                 onKeyDown={(e) => handleKeyDown(e, item.name)}
                 className={cn(
-                  'text-sm font-medium transition-colors hover:text-gold inline-flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 rounded px-2 py-1',
+                  'text-base font-medium transition-colors hover:text-gold inline-flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 rounded px-2 py-1',
                   isActive ? 'text-gold' : 'text-navy'
                 )}
                 aria-expanded={openDropdown === item.name}
@@ -60,7 +60,7 @@ export function Navigation() {
                 <Link href={item.href} className="hover:text-gold">
                   {item.name}
                 </Link>
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
@@ -79,14 +79,9 @@ export function Navigation() {
                       role="menuitem"
                       tabIndex={0}
                     >
-                      <div className="font-medium text-navy text-sm hover:text-gold">
+                      <div className="font-medium text-navy text-base hover:text-gold">
                         {child.name}
                       </div>
-                      {child.description && (
-                        <div className="text-xs text-warm-gray mt-1 line-clamp-2">
-                          {child.description}
-                        </div>
-                      )}
                     </Link>
                   ))}
                 </div>
@@ -100,7 +95,7 @@ export function Navigation() {
             key={item.name}
             href={item.href}
             className={cn(
-              'text-sm font-medium transition-colors hover:text-gold focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 rounded px-2 py-1',
+              'text-base font-medium transition-colors hover:text-gold focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 rounded px-2 py-1',
               isActive ? 'text-gold' : 'text-navy'
             )}
           >
