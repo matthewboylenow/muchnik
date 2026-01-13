@@ -10,9 +10,9 @@ export function Header() {
   return (
     <header className="bg-white shadow-md relative z-10">
       {/* Top Bar */}
-      <div className="bg-navy text-white text-xs py-2">
+      <div className="bg-navy text-white text-sm md:text-base py-3">
         <div className="container-custom flex flex-wrap justify-between items-center gap-2">
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 md:gap-6 font-medium">
             {locations.map((location) => (
               <a
                 key={location.id}
@@ -25,7 +25,7 @@ export function Header() {
           </div>
           <a
             href="mailto:kmuchnik@muchnikelderlaw.com"
-            className="hover:text-gold transition-colors"
+            className="hover:text-gold transition-colors font-medium"
           >
             kmuchnik@muchnikelderlaw.com
           </a>

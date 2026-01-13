@@ -41,12 +41,12 @@ export default function HomePage() {
               Experienced Elder Law & Estate Planning Attorneys in NY & NJ
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl mb-8 text-gray-100 leading-relaxed">
-              For over 30 years, Muchnik Elder Law P.C. has provided expert legal guidance in elder law, Medicaid planning, estate planning, and guardianships. Serving Staten Island, Manhattan, and New Jersey with compassionate, personalized legal services.
+              For over 30 years, Muchnik Elder Law P.C. has provided expert legal guidance in elder law, Medicaid planning, estate planning, probate, and guardianships. Serving Staten Island, Manhattan, and Randolph, NJ with compassionate, personalized legal services.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
                 <Button size="lg" variant="primary" className="text-base md:text-lg px-8 py-4">
-                  Schedule a Consultation
+                  Schedule a Free Consultation
                 </Button>
               </Link>
               <Link href="/practice-areas">
@@ -308,14 +308,14 @@ export default function HomePage() {
       <section className="section-padding bg-navy text-white">
         <div className="container-custom text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-            Schedule Your Elder Law Consultation Today
+            Schedule Your Free Elder Law Consultation Today
           </h2>
           <p className="text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
             Get expert legal guidance for Medicaid planning, estate planning, guardianships, and more. Our experienced attorneys serve clients throughout New York and New Jersey.
           </p>
           <Link href="/contact">
             <Button variant="primary" size="lg">
-              Schedule Your Consultation
+              Schedule Your Free Consultation
             </Button>
           </Link>
         </div>

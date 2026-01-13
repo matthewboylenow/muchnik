@@ -84,7 +84,7 @@ export default function PracticeAreasPage() {
             Ready to Get Started?
           </h2>
           <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-2xl mx-auto">
-            Contact us today to schedule a consultation with one of our experienced attorneys.
+            Contact us today to schedule a free consultation with one of our experienced attorneys.
           </p>
           <Link href="/contact">
             <Button variant="primary" size="lg" className="text-base md:text-lg px-8 py-4">
