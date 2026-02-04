@@ -24,10 +24,10 @@ export function Header() {
             ))}
           </div>
           <a
-            href="mailto:kmuchnik@muchnikelderlaw.com"
+            href="mailto:office@muchnikelderlaw.com"
             className="hover:text-gold transition-colors font-medium"
           >
-            kmuchnik@muchnikelderlaw.com
+            office@muchnikelderlaw.com
           </a>
         </div>
       </div>

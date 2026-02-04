@@ -3,18 +3,18 @@ import { TeamMember } from '@/types';
 export const teamMembers: TeamMember[] = [
   {
     id: 'kirill-muchnik',
-    name: 'Kirill Muchnik',
-    title: 'Partner',
-    image: '/images/team/kirill-muchnik.jpg',
-    bio: `Kirill Muchnik is a partner of the Firm and concentrates in Elder Law, Special Needs Planning, Guardianship, Estate Planning, and Estate Administration. Mr. Muchnik grew up in Brooklyn, NY, arriving with his family to the United States in 1992 from the Ukraine. He is fluent in the Russian language and conversational in Ukrainian.
+    name: 'Kirill Muchnik, Esq.',
+    title: 'Managing Partner',
+    image: '/images/team/new/Kirill.PNG',
+    bio: `Kirill Muchnik is a managing partner of the Firm and concentrates in Elder Law, Estate Planning, Estate Administration, Surrogate's Court litigation, Special Needs Planning, Guardianships and Real Estate.
 
-After receiving a Bachelor of Business Administration from Baruch College in 2009, with a major in Finance and Investments, Mr. Muchnik worked as a financial services representative for MetLife where he developed knowledge of insurance and investment products. Mr. Muchnik's passion to help guide individuals through the legal and financial challenges is the force that propelled his decision to enter law school.
+Mr. Muchnik grew up in Brooklyn, NY, arriving with his family to the United States in 1992 from the Ukraine. He is fluent in the Russian language and conversational in Ukrainian. After receiving a Bachelor of Business Administration from Baruch College in 2009, with a major in Finance and Investments, Mr. Muchnik worked as a financial services representative for MetLife where he developed knowledge of insurance and investment products. Mr. Muchnik's passion to help guide individuals through the legal and financial challenges is the force that propelled his decision to enter law school. During his studies at Albany Law School, he interned at The Ayco Company, L.P., A Goldman Sachs Company, assisting financial advisors with providing investment services, retirement and tax planning.
 
-During his studies at Albany Law School, he interned at The Ayco Company, L.P., A Goldman Sachs Company, assisting financial advisors with providing investment services, retirement and tax planning.
+With experience in both insurance sales and wealth management, Mr. Muchnik brings to Muchnik Elder Law P.C. a deep understanding of the complex issues that can arise in the law practice areas in which he focuses.
 
-With experience in both insurance sales and wealth management, Mr. Muchnik brings to Muchnik Elder Law P.C. an understanding of complex issues that can arise in both Estate Planning and Administration.
+Mr. Muchnik is a personable and compassionate advocate who is resolution-driven and always puts his client first. He has experience planning for clients at all stages of life, including singles, married couples, families with minor children, families with special needs children, blended families, those nearing retirement, individuals in their peak earning years, those in retirement and focused on legacy planning, and those who find themselves single again as a result of divorce or other life circumstances.
 
-Mr. Muchnik received his Juris Doctorate from Albany Law School in 2014 and was admitted to the Bar of the State of New York and the State of New Jersey in 2015. He is a member of the New York State Bar Association, the Richmond County Bar Association, the New Jersey State Bar Association and the American Bar Association.`,
+Mr. Muchnik received his Juris Doctorate from Albany Law School in 2014 and was admitted to the Bar of the State of New York and the State of New Jersey in 2015. He is a member of the New York State Bar Association (NYSBA), the Richmond County Bar Association, the New Jersey State Bar Association (NJSBA), the Morris County Bar Association, the Bergen County Bar Association, and the National Academy of Elder Law Attorneys (NAELA) including its New York and New Jersey Chapters.`,
   },
   {
     id: 'leslie-langworthy',
@@ -52,11 +52,61 @@ Interested in local government, he was a founding member of Staten Island Vote Y
   {
     id: 'tracey-marino',
     name: 'Tracey Marino',
-    title: 'Office Manager and Paralegal',
-    bio: `Tracey Marino is a Paralegal of the Firm and Office Manager. After receiving an Associate's Degree in Secretarial Studies from Katherine Gibbs School in 1990, Mrs. Marino worked as an Executive Legal Assistant for large law Firms in Manhattan for 10 years specializing in corporate law and real estate.
+    title: 'Office Manager',
+    image: '/images/team/new/Tracey.PNG',
+    bio: `Tracey Marino serves as the Office Manager for the Firm, bringing more than 30 years of legal and administrative experience.
 
-After starting a family, Mrs. Marino joined our predecessor firm, Johnson & Langworthy, P.C., in 2001 and brings over 30 years of experience to Muchnik Elder Law P.C. in real estate transactions and experience in providing lawyers with direct assistance, such as helping to prepare the necessary documents for cases and submission of paperwork to courthouses.
+Mrs. Marino began her career in 1990 after earning her Associate's Degree in Secretarial Studies from Katherine Gibbs School. She spent the first decade of her career as an Executive Legal Assistant at prominent Manhattan law firms, concentrating on corporate law and real estate.
 
-Mrs. Marino resides on Staten Island with her family.`,
+In 2001, after starting a family, Mrs. Marino joined the firm's predecessor, Johnson & Langworthy, P.C. Since then, she has developed extensive experience supporting attorneys in all aspects of real estate transactions and legal case management, including preparing legal documents and filing court submissions. She played a key role in the firm's expansion and its transition to Muchnik Elder Law P.C.
+
+Tracey currently resides in Florida with her family.`,
+  },
+  {
+    id: 'michael-laporte',
+    name: 'Michael L.P. LaPorte',
+    title: 'Paralegal',
+    image: '/images/team/new/Michael.jpg',
+    bio: `Michael L.P. LaPorte has been a paralegal with Muchnik Elder Law P.C. since July of 2024. His work includes assisting with the preparation of estate planning documents and communicating on behalf of the Firm with Surrogate's Court staff and Medicaid offices.
+
+Mr. LaPorte brings a combination of legal training, court system experience, and client-facing skills that makes him an exceptional support to the Firm, particularly in the highly sensitive areas of probate, estate planning, and long-term care planning.
+
+Mr. LaPorte's prior role as an office clerk with the Connecticut Judicial Branch—serving in both Norwich Superior Court and Willimantic Juvenile Court—gave him substantial experience with intensely personal and emotionally charged matters, including divorce, child custody, housing, child protection, child delinquency, and restraining orders.
+
+Prior to beginning his career in legal services, Mr. LaPorte worked for the Town of Glastonbury, Connecticut, where he grew up, as an Assistant Registrar of Voters, and was an Election Moderator certified by the Registrar of Voters Association of Connecticut. He also worked for People's United Bank (fully acquired by M&T Bank in June of 2021) for several years.
+
+Mr. LaPorte earned his Bachelor of Arts in Political Science from the University of Connecticut in December of 2018, and a Paralegal Certificate accredited by the American Bar Association from Connecticut State Community College – Manchester (formerly known as Manchester Community College) in December of 2021. At UConn, Mr. LaPorte was active in the Undergraduate Student Government and while working toward his Paralegal Certificate, he was President of the Manchester Community College Paralegal Association, and is a member of the Lambda Epsilon Chi Paralegal Honor Society and the Alpha Beta Gamma Business Honor Society. He is also a member of the graduating class of 2013 of Bridgton Academy, an all-men's preparatory school in western Maine.
+
+Mr. LaPorte speaks and reads both Spanish and Russian and is a student of the Russian language at his church, St. John the Baptist Russian Orthodox Church in Little Falls, New Jersey. He also holds a technician-level amateur radio license from the Federal Communications Commission; his call sign is KC1RRL. He enjoys coding in Python, cooking, running, cats, using his radios, and traveling the world and the United States with his wife, Zhanna Rodnova-LaPorte. He and Zhanna live with their cat, Ralphie in Morris County, New Jersey.`,
+  },
+  {
+    id: 'rita-polito',
+    name: 'Rita Polito',
+    title: 'Legal Secretary/Office Manager',
+    image: '/images/team/new/Rita.jpg',
+    bio: `Rita Polito is a seasoned Legal Secretary and Office Manager with over 25 years of experience supporting attorneys and clients in a variety of legal settings, with a strong focus on elder law.
+
+She brings extensive knowledge, professionalism, and stability to the firm's daily operations. Mrs. Polito oversees office administration, client relations, scheduling, and the preparation and management of legal documents related to estate planning, probate, guardianship, and long-term care planning.
+
+In support of the firm's elder law and estate planning practice, Mrs. Polito assists with the coordination and preparation of deeds and related real estate transfer documents for use in estate plans and as part of probate and trust administration. Mrs. Polito also plays a key role in matters involving Medicaid eligibility for in-home personal care services and skilled nursing facility care. Under attorney direction, she assists with gathering and organizing financial and medical documentation, tracking deadlines and application requirements, and preparing supporting forms and correspondence necessary for Medicaid applications and related planning.
+
+Her deep understanding of legal procedures and her meticulous attention to detail help ensure efficiency, accuracy, and consistency throughout every matter.
+
+As a primary point of contact for clients, Mrs. Polito is known for her compassionate and reassuring approach. She understands the sensitive nature of elder law issues and is committed to making clients feel informed, supported, and respected from their first interaction with the firm through resolution. Her Greek language fluency further enables her to communicate clearly and effectively with Greek-speaking clients and their families.
+
+Mrs. Polito's dedication, reliability, and decades of experience make her an integral part of the Firm and a trusted resource for both clients and attorneys alike.`,
+  },
+  {
+    id: 'kathleen-corbett',
+    name: 'Kathleen Corbett',
+    title: 'Legal Secretary',
+    image: '/images/team/new/Kathleen.jpg',
+    bio: `Kathleen Corbett has been a legal secretary with Muchnik Elder Law P.C. since August of 2023.
+
+Ms. Corbett provides detailed administrative and operational support to ensure the efficient management and closing of client matters. She plays an important role in maintaining accuracy, organization, and consistency across the firm's legal and administrative processes.
+
+Ms. Corbett is responsible for entering and tracking case progress records, onboarding new client files, and finalizing the closing of completed matters. Her careful documentation and monitoring support compliance and help ensure that cases move forward and conclude efficiently. She also manages reconciliation of file expenses and office inventory, contributing to effective cost control and smooth day to day office operations. In addition, Ms. Corbett assists with the firm's marketing efforts by organizing and maintaining educational materials for seminars, client presentations, and community outreach, helping to ensure that information about the firm's services is clear, accurate, and readily available.
+
+Known for her attention to detail, reliability, and strong organizational skills, Ms. Corbett is a valued support to the legal team and an integral part of the firm's administrative staff. Before joining Muchnik Elder Law, she worked at several of the largest New York City law firms, where she earned and maintained the same strong professional reputation.`,
   },
 ];

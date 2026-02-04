@@ -44,6 +44,6 @@ export const locations: Location[] = [
 
 export const firmInfo = {
   name: 'Muchnik Elder Law P.C.',
-  email: 'kmuchnik@muchnikelderlaw.com',
+  email: 'office@muchnikelderlaw.com',
   fax: '718-989-7378',
 };
