@@ -2,18 +2,30 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { navigation } from '@/data/navigation';
 
 export function Navigation() {
   const pathname = usePathname();
+  const router = useRouter();
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const dropdownRefs = useRef<Map<string, HTMLDivElement>>(new Map());
+
+  // Close dropdown when pathname changes (after navigation)
+  useEffect(() => {
+    setOpenDropdown(null);
+  }, [pathname]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      let clickedInside = false;
+      dropdownRefs.current.forEach((ref) => {
+        if (ref && ref.contains(event.target as Node)) {
+          clickedInside = true;
+        }
+      });
+      if (!clickedInside) {
         setOpenDropdown(null);
       }
     };
@@ -31,6 +43,10 @@ export function Navigation() {
     }
   };
 
+  const handleDropdownItemClick = (href: string) => {
+    router.push(href);
+  };
+
   return (
     <nav className="hidden md:flex items-center space-x-8">
       {navigation.map((item) => {
@@ -42,12 +58,18 @@ export function Navigation() {
             <div
               key={item.name}
               className="relative"
-              ref={dropdownRef}
+              ref={(el) => {
+                if (el) dropdownRefs.current.set(item.name, el);
+              }}
               onMouseEnter={() => setOpenDropdown(item.name)}
               onMouseLeave={() => setOpenDropdown(null)}
             >
-              <button
-                onClick={() => setOpenDropdown(openDropdown === item.name ? null : item.name)}
+              <Link
+                href={item.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOpenDropdown(openDropdown === item.name ? null : item.name);
+                }}
                 onKeyDown={(e) => handleKeyDown(e, item.name)}
                 className={cn(
                   'text-base font-medium transition-colors hover:text-gold inline-flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 rounded px-2 py-1',
@@ -55,15 +77,12 @@ export function Navigation() {
                 )}
                 aria-expanded={openDropdown === item.name}
                 aria-haspopup="true"
-                aria-label={`${item.name} menu`}
               >
-                <Link href={item.href} className="hover:text-gold">
-                  {item.name}
-                </Link>
+                {item.name}
                 <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
-              </button>
+              </Link>
 
               {openDropdown === item.name && (
                 <div
@@ -71,18 +90,17 @@ export function Navigation() {
                   role="menu"
                   aria-label={`${item.name} submenu`}
                 >
-                  {item.children.map((child: any, index: number) => (
-                    <Link
+                  {item.children.map((child: { name: string; href: string }) => (
+                    <button
                       key={child.href}
-                      href={child.href}
-                      className="block px-4 py-3 hover:bg-cream transition-colors focus:outline-none focus:bg-cream focus:ring-2 focus:ring-inset focus:ring-gold"
+                      onClick={() => handleDropdownItemClick(child.href)}
+                      className="block w-full text-left px-4 py-3 hover:bg-cream transition-colors focus:outline-none focus:bg-cream focus:ring-2 focus:ring-inset focus:ring-gold"
                       role="menuitem"
-                      tabIndex={0}
                     >
                       <div className="font-medium text-navy text-base hover:text-gold">
                         {child.name}
                       </div>
-                    </Link>
+                    </button>
                   ))}
                 </div>
               )}
