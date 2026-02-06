@@ -16,7 +16,7 @@ export function Footer() {
             </h3>
             <p className="text-sm text-gray-300 mb-4">
               For more than 30 years, we have helped families with Elder Law, Medicaid Planning,
-              Estate Planning, and Guardianships across New York and New Jersey.
+              Estate Planning, Probate and Guardianships across New York and New Jersey.
             </p>
             <div className="space-y-2 text-sm">
               <p>

@@ -94,8 +94,15 @@ export default function ContactPage() {
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+                      <svg className="w-8 h-8" viewBox="0 0 48 36" fill="none">
+                        <rect width="48" height="36" rx="2" fill="#B22234"/>
+                        <rect y="5.54" width="48" height="2.77" fill="white"/>
+                        <rect y="11.08" width="48" height="2.77" fill="white"/>
+                        <rect y="16.62" width="48" height="2.77" fill="white"/>
+                        <rect y="22.15" width="48" height="2.77" fill="white"/>
+                        <rect y="27.69" width="48" height="2.77" fill="white"/>
+                        <rect y="33.23" width="48" height="2.77" fill="white"/>
+                        <rect width="20" height="19.38" fill="#3C3B6E"/>
                       </svg>
                     </div>
                   </div>
@@ -104,7 +111,7 @@ export default function ContactPage() {
                       Veterans Discount Available
                     </h3>
                     <p className="text-lg">
-                      We honor those who have served. Veterans receive 20% off estate planning services in recognition of their service to our nation.
+                      In recognition of the work of Gary W. Johnson, Esq., a veteran who served in Vietnam, and in recognition of the men and women who have served in the U.S. Armed Services, Muchnik Elder Law P.C. offers a 20% discount to Veterans on estate planning services.
                     </p>
                   </div>
                 </div>

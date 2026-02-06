@@ -6,7 +6,7 @@ export function LocalBusinessJsonLd() {
     '@type': 'LegalService',
     name: firmInfo.name,
     description:
-      'Elder Law, Estate Planning, Medicaid Planning, and Guardianship attorneys serving New York and New Jersey for over 30 years.',
+      'Elder Law, Estate Planning, Medicaid Planning, Probate, and Guardianship attorneys serving New York and New Jersey for over 30 years.',
     url: 'https://muchnikelderlaw.com',
     telephone: locations[0].phone,
     email: firmInfo.email,

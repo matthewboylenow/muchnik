@@ -48,7 +48,7 @@ export default function OurTeamPage() {
                           src={member.image}
                           alt={member.name}
                           fill
-                          className="object-cover"
+                          className="object-cover object-top"
                         />
                       </div>
                     </div>

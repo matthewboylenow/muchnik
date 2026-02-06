@@ -17,39 +17,6 @@ Mr. Muchnik is a personable and compassionate advocate who is resolution-driven 
 Mr. Muchnik received his Juris Doctorate from Albany Law School in 2014 and was admitted to the Bar of the State of New York and the State of New Jersey in 2015. He is a member of the New York State Bar Association (NYSBA), the Richmond County Bar Association, the New Jersey State Bar Association (NJSBA), the Morris County Bar Association, the Bergen County Bar Association, and the National Academy of Elder Law Attorneys (NAELA) including its New York and New Jersey Chapters.`,
   },
   {
-    id: 'leslie-langworthy',
-    name: 'Leslie M. Langworthy',
-    title: 'Of Counsel',
-    image: '/images/team/leslie-langworthy.jpg',
-    bio: `Leslie M. Langworthy is Of Counsel to the Firm and practices in the areas of Estate Planning, Estate and Trust administration and settlement and Elder Law.
-
-Ms. Langworthy graduated Colgate University in Hamilton, New York and Albany Law School of Union University in Albany, New York.
-
-After admission to the Bar, she worked as a Law Assistant to the Honorable Robert Best, County Judge and Surrogate in Fulton County, New York. Thereafter, she worked as a Trust Officer for Manufacturers Hanover Bank and the Bank of New York.
-
-She joined the legal staff of the Bank of New York and concentrated on credit facilities and Bank regulatory matters. She then became an Associate Attorney for Carella, Byrne, Bain & Gilfillan in Roseland, New Jersey. While there, she handled acquisitions and divestitures for an investment company and provided counsel to an investment advisory Firm.
-
-In 1990, Ms. Langworthy began practicing law in her hometown, Staten Island, New York of Counsel and later a partner of predecessor firm Johnson & Langworthy, P.C. concentrating on Estate Planning, Trust and Estate Settlement and general Corporate Practice.
-
-She was a member of the Board of Directors of the Alzheimer's Association, the Staten Island Children's Museum and the Friends of Blue Heron Park. She co-founded Staten Island Vote Yes, Inc., a grass roots organization advocating for self-government for Staten Island. She also served as Treasurer to the Staten Island Herb Society and served on the Board of the International Herb Association.
-
-Ms. Langworthy resides on Staten Island and enjoys gardening, time spent in the Adirondacks, New York and writing about growing and using herbs.`,
-  },
-  {
-    id: 'gary-johnson',
-    name: 'Gary W. Johnson',
-    title: 'Founder & Principal (1948-2014)',
-    image: '/images/team/gary-johnson.jpg',
-    isDeceased: true,
-    bio: `Gary W. Johnson founded what is now Muchnik Elder Law P.C.
-
-Mr. Johnson had graduated from Richmond College on Staten Island and Pace University School of Law after having served in the U.S. Army as a combat soldier in Vietnam. After school and his service in the Army, he returned to his home community to practice law.
-
-After practicing several years in general practice and real estate matters, Mr. Johnson began concentrating in the area of Elder Law, particularly planning for seniors who might need nursing home care or in-home health care services. He helped many Staten Island and Brooklyn families and single people obtain services in their elder years. He was active in the Alzheimer's Foundation of Staten Island, Inc. and served on the Board of Directors of the Community Agency for Senior Citizens.
-
-Interested in local government, he was a founding member of Staten Island Vote Yes, Inc., a grassroots organization advocating for self-government for Staten Island.`,
-  },
-  {
     id: 'tracey-marino',
     name: 'Tracey Marino',
     title: 'Office Manager',
@@ -108,5 +75,38 @@ Ms. Corbett provides detailed administrative and operational support to ensure t
 Ms. Corbett is responsible for entering and tracking case progress records, onboarding new client files, and finalizing the closing of completed matters. Her careful documentation and monitoring support compliance and help ensure that cases move forward and conclude efficiently. She also manages reconciliation of file expenses and office inventory, contributing to effective cost control and smooth day to day office operations. In addition, Ms. Corbett assists with the firm's marketing efforts by organizing and maintaining educational materials for seminars, client presentations, and community outreach, helping to ensure that information about the firm's services is clear, accurate, and readily available.
 
 Known for her attention to detail, reliability, and strong organizational skills, Ms. Corbett is a valued support to the legal team and an integral part of the firm's administrative staff. Before joining Muchnik Elder Law, she worked at several of the largest New York City law firms, where she earned and maintained the same strong professional reputation.`,
+  },
+  {
+    id: 'leslie-langworthy',
+    name: 'Leslie M. Langworthy',
+    title: 'Of Counsel',
+    image: '/images/team/leslie-langworthy.jpg',
+    bio: `Leslie M. Langworthy is Of Counsel to the Firm and practices in the areas of Estate Planning, Estate and Trust administration and settlement and Elder Law.
+
+Ms. Langworthy graduated Colgate University in Hamilton, New York and Albany Law School of Union University in Albany, New York.
+
+After admission to the Bar, she worked as a Law Assistant to the Honorable Robert Best, County Judge and Surrogate in Fulton County, New York. Thereafter, she worked as a Trust Officer for Manufacturers Hanover Bank and the Bank of New York.
+
+She joined the legal staff of the Bank of New York and concentrated on credit facilities and Bank regulatory matters. She then became an Associate Attorney for Carella, Byrne, Bain & Gilfillan in Roseland, New Jersey. While there, she handled acquisitions and divestitures for an investment company and provided counsel to an investment advisory Firm.
+
+In 1990, Ms. Langworthy began practicing law in her hometown, Staten Island, New York of Counsel and later a partner of predecessor firm Johnson & Langworthy, P.C. concentrating on Estate Planning, Trust and Estate Settlement and general Corporate Practice.
+
+She was a member of the Board of Directors of the Alzheimer's Association, the Staten Island Children's Museum and the Friends of Blue Heron Park. She co-founded Staten Island Vote Yes, Inc., a grass roots organization advocating for self-government for Staten Island. She also served as Treasurer to the Staten Island Herb Society and served on the Board of the International Herb Association.
+
+Ms. Langworthy resides on Staten Island and enjoys gardening, time spent in the Adirondacks, New York and writing about growing and using herbs.`,
+  },
+  {
+    id: 'gary-johnson',
+    name: 'Gary W. Johnson',
+    title: 'Founder & Principal (1948-2014)',
+    image: '/images/team/gary-johnson.jpg',
+    isDeceased: true,
+    bio: `Gary W. Johnson founded what is now Muchnik Elder Law P.C.
+
+Mr. Johnson had graduated from Richmond College on Staten Island and Pace University School of Law after having served in the U.S. Army as a combat soldier in Vietnam. After school and his service in the Army, he returned to his home community to practice law.
+
+After practicing several years in general practice and real estate matters, Mr. Johnson began concentrating in the area of Elder Law, particularly planning for seniors who might need nursing home care or in-home health care services. He helped many Staten Island and Brooklyn families and single people obtain services in their elder years. He was active in the Alzheimer's Foundation of Staten Island, Inc. and served on the Board of Directors of the Community Agency for Senior Citizens.
+
+Interested in local government, he was a founding member of Staten Island Vote Yes, Inc., a grassroots organization advocating for self-government for Staten Island.`,
   },
 ];

@@ -72,6 +72,68 @@ export async function sendContactNotification(data: SendContactNotificationProps
   }
 }
 
+interface SendCareerApplicationProps {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone?: string;
+  position: string;
+  message?: string;
+  resumeLink?: string;
+}
+
+export async function sendCareerApplicationNotification(data: SendCareerApplicationProps) {
+  const toAddress = process.env.CONTACT_EMAIL!;
+  const subject = `New Career Application: ${data.position} - ${data.firstName} ${data.lastName}`;
+
+  const command = new SendEmailCommand({
+    Source: fromAddress,
+    Destination: {
+      ToAddresses: [toAddress],
+    },
+    Message: {
+      Subject: {
+        Data: subject,
+      },
+      Body: {
+        Html: {
+          Data: `
+      <h2>New Career Application</h2>
+      <p><strong>Name:</strong> ${data.firstName} ${data.lastName}</p>
+      <p><strong>Email:</strong> ${data.email}</p>
+      <p><strong>Phone:</strong> ${data.phone || 'Not provided'}</p>
+      <p><strong>Position:</strong> ${data.position}</p>
+      <p><strong>Resume Link:</strong> ${data.resumeLink ? `<a href="${data.resumeLink}">${data.resumeLink}</a>` : 'Not provided'}</p>
+      <h3>Cover Letter / Additional Information:</h3>
+      <p>${data.message || 'Not provided'}</p>
+    `,
+        },
+      },
+    },
+  });
+
+  try {
+    const result = await ses.send(command);
+    await db.insert(emailLogs).values({
+      toAddress,
+      subject,
+      type: 'career_application',
+      status: 'sent',
+      messageId: result.MessageId,
+    });
+    return result;
+  } catch (err) {
+    await db.insert(emailLogs).values({
+      toAddress,
+      subject,
+      type: 'career_application',
+      status: 'failed',
+      error: err instanceof Error ? err.message : String(err),
+    });
+    throw err;
+  }
+}
+
 export async function sendContactConfirmation(firstName: string, email: string) {
   const subject = 'Thank you for contacting Muchnik Elder Law';
 

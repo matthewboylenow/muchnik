@@ -5,7 +5,7 @@ import { Card, CardTitle, CardContent } from '@/components/ui/Card';
 export const metadata: Metadata = {
   title: 'The Firm | About Us',
   description:
-    'Learn about Muchnik Elder Law P.C. and our commitment to serving families across New York and New Jersey for more than 30 years.',
+    'Learn about Muchnik Elder Law P.C. and our commitment to serving families across New York and New Jersey for more than 30 years, together with our predecessor firms.',
 };
 
 export default function TheFirmPage() {
@@ -27,8 +27,8 @@ export default function TheFirmPage() {
               The Firm
             </h1>
             <p className="text-xl md:text-2xl text-gray-100 leading-relaxed">
-              For more than 30 years, Muchnik Elder Law P.C. has been dedicated to helping families
-              navigate the complexities of Elder Law, Estate Planning, and Medicaid Planning.
+              For more than 30 years, Muchnik Elder Law, together with its predecessor firms, has worked
+              with clients at crucial times in their lives.
             </p>
           </div>
         </div>
@@ -44,10 +44,10 @@ export default function TheFirmPage() {
             <div className="bg-white rounded-xl p-8 md:p-12 shadow-lg">
               <div className="prose prose-lg max-w-none text-charcoal space-y-6">
                 <p className="text-xl leading-relaxed">
-                  For more than 30 years, Muchnik Elder Law P.C. has worked with clients at crucial times in their lives. We provide straightforward answers to our clients' questions.
+                  For more than 30 years, Muchnik Elder Law, together with its predecessor firms, has worked with clients at crucial times in their lives. We provide straightforward answers to our clients' questions.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  We are experienced in sophisticated, complex estate planning and settlements. Many of our clients come to us referred by former clients and by our professional colleagues.
+                  We are experienced in handling sophisticated and complex estate planning and estate settlements. Many of our clients come to us referred by former clients and by our professional colleagues.
                 </p>
                 <p className="text-lg leading-relaxed">
                   We treat each client as an individual with unique legal challenges. With offices in Staten Island, Manhattan, and New Jersey, we serve families throughout the tri-state area.

@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 import { Card, CardTitle, CardContent } from '@/components/ui/Card';
+import { CareerApplicationForm } from '@/components/sections/CareerApplicationForm';
 
 export const metadata: Metadata = {
   title: 'Careers | About Us',
@@ -48,7 +48,7 @@ const benefits = [
   },
   {
     title: 'Client Focused Work',
-    description: 'Our practice is centered on helping individuals and families navigate significant life events. Your work will have a direct and lasting impact on the people we serve.',
+    description: 'Our practice is centered on helping individuals and families navigate significant life events. Our work has a direct and lasting impact on the people we serve.',
     icon: (
       <path
         strokeLinecap="round"
@@ -173,28 +173,24 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* Application Process */}
+      {/* Application Form */}
       <section className="section-padding bg-navy text-white">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-              Application Process
-            </h2>
-            <p className="text-xl text-gray-100 mb-4">
-              Interested in joining our dedicated team?
-            </p>
-            <p className="text-lg text-gray-200 mb-8">
-              Click the button below to access our application form. Please complete and submit your information, and a member of our hiring team will be in touch if your qualifications match our current needs.
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-gold text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gold-dark transition-colors"
-            >
-              Apply Now
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
+                Application Form
+              </h2>
+              <p className="text-xl text-gray-100 mb-4">
+                Interested in joining our dedicated team?
+              </p>
+              <p className="text-lg text-gray-200">
+                Please complete and submit the form below. A member of our hiring team will be in touch if your qualifications match our current needs.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-8 md:p-10 shadow-lg">
+              <CareerApplicationForm />
+            </div>
           </div>
         </div>
       </section>

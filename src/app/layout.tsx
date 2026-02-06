@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: '%s | Muchnik Elder Law P.C.',
   },
   description:
-    'For more than 30 years, Muchnik Elder Law P.C. has helped families with Elder Law, Medicaid Planning, Estate Planning, and Guardianships across New York and New Jersey.',
+    'For more than 30 years, Muchnik Elder Law P.C., together with its predecessor firms, has helped families with Elder Law, Medicaid Planning, Estate Planning, Probate, and Guardianships across New York and New Jersey.',
   keywords: [
     'elder law attorney',
     'estate planning lawyer',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: 'Muchnik Elder Law P.C.',
     title: 'Muchnik Elder Law P.C. | Elder Law & Estate Planning Attorneys',
     description:
-      'For more than 30 years, Muchnik Elder Law P.C. has helped families with Elder Law, Medicaid Planning, Estate Planning, and Guardianships.',
+      'For more than 30 years, Muchnik Elder Law P.C., together with its predecessor firms, has helped families with Elder Law, Medicaid Planning, Estate Planning, Probate, and Guardianships.',
     images: [
       {
         url: '/og-image.jpg',
