@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Guardianships | Muchnik Elder Law P.C.',
     description: 'Expert guardianship legal services in New York and New Jersey.',
-    images: ['/images/practice-areas/guardianships.jpg'],
+    images: ['/images/practice-areas/guardianships-hero.png'],
   },
 };
 
@@ -20,7 +20,7 @@ export default function GuardianshipsPage() {
       <section className="relative bg-navy text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/practice-areas/guardianships.jpg"
+            src="/images/practice-areas/guardianships-hero.png"
             alt="Guardianships"
             className="w-full h-full object-cover opacity-30"
           />
