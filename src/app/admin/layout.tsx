@@ -64,6 +64,12 @@ export default async function AdminLayout({
               Testimonials
             </Link>
             <Link
+              href="/admin/users"
+              className="block py-2 px-4 rounded hover:bg-navy-light transition-colors"
+            >
+              Users
+            </Link>
+            <Link
               href="/admin/analytics"
               className="block py-2 px-4 rounded hover:bg-navy-light transition-colors"
             >

@@ -4,6 +4,7 @@ import { db } from '@/lib/db';
 import { posts } from '@/lib/db/schema';
 import { eq } from 'drizzle-orm';
 import { put } from '@vercel/blob';
+import { sanitize } from '@/lib/sanitize';
 
 interface ImportPost {
   wpId: string;
@@ -71,7 +72,7 @@ export async function POST(request: Request) {
         const postData = {
           title: post.title,
           slug: post.slug,
-          content: post.content,
+          content: sanitize(post.content),
           excerpt: post.excerpt || null,
           featuredImage: featuredImageBlobUrl || null,
           metaTitle: post.metaTitle || null,

@@ -7,6 +7,7 @@ import { eq, and } from 'drizzle-orm';
 import { formatDate } from '@/lib/utils';
 import { Button } from '@/components/ui/Button';
 import { BlogPostJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
+import { sanitize } from '@/lib/sanitize';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -118,7 +119,7 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="container-custom max-w-4xl">
           <div
             className="prose prose-lg max-w-none"
-            dangerouslySetInnerHTML={{ __html: post.content }}
+            dangerouslySetInnerHTML={{ __html: sanitize(post.content) }}
           />
 
           {/* CTA */}
