@@ -1,4 +1,6 @@
 import { SESClient, SendEmailCommand } from '@aws-sdk/client-ses';
+import { db } from '@/lib/db';
+import { emailLogs } from '@/lib/db/schema';
 
 const ses = new SESClient({
   region: process.env.AWS_SES_REGION || 'us-east-1',
@@ -20,14 +22,17 @@ interface SendContactNotificationProps {
 }
 
 export async function sendContactNotification(data: SendContactNotificationProps) {
+  const toAddress = process.env.CONTACT_EMAIL!;
+  const subject = `New Contact Form Submission from ${data.firstName} ${data.lastName}`;
+
   const command = new SendEmailCommand({
     Source: fromAddress,
     Destination: {
-      ToAddresses: [process.env.CONTACT_EMAIL!],
+      ToAddresses: [toAddress],
     },
     Message: {
       Subject: {
-        Data: `New Contact Form Submission from ${data.firstName} ${data.lastName}`,
+        Data: subject,
       },
       Body: {
         Html: {
@@ -45,10 +50,31 @@ export async function sendContactNotification(data: SendContactNotificationProps
     },
   });
 
-  return await ses.send(command);
+  try {
+    const result = await ses.send(command);
+    await db.insert(emailLogs).values({
+      toAddress,
+      subject,
+      type: 'contact_notification',
+      status: 'sent',
+      messageId: result.MessageId,
+    });
+    return result;
+  } catch (err) {
+    await db.insert(emailLogs).values({
+      toAddress,
+      subject,
+      type: 'contact_notification',
+      status: 'failed',
+      error: err instanceof Error ? err.message : String(err),
+    });
+    throw err;
+  }
 }
 
 export async function sendContactConfirmation(firstName: string, email: string) {
+  const subject = 'Thank you for contacting Muchnik Elder Law';
+
   const command = new SendEmailCommand({
     Source: fromAddress,
     Destination: {
@@ -56,7 +82,7 @@ export async function sendContactConfirmation(firstName: string, email: string) 
     },
     Message: {
       Subject: {
-        Data: 'Thank you for contacting Muchnik Elder Law',
+        Data: subject,
       },
       Body: {
         Html: {
@@ -76,5 +102,24 @@ export async function sendContactConfirmation(firstName: string, email: string) 
     },
   });
 
-  return await ses.send(command);
+  try {
+    const result = await ses.send(command);
+    await db.insert(emailLogs).values({
+      toAddress: email,
+      subject,
+      type: 'contact_confirmation',
+      status: 'sent',
+      messageId: result.MessageId,
+    });
+    return result;
+  } catch (err) {
+    await db.insert(emailLogs).values({
+      toAddress: email,
+      subject,
+      type: 'contact_confirmation',
+      status: 'failed',
+      error: err instanceof Error ? err.message : String(err),
+    });
+    throw err;
+  }
 }

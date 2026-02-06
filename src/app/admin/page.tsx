@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { db } from '@/lib/db';
-import { posts, videos, submissions, testimonials, users } from '@/lib/db/schema';
+import { posts, videos, submissions, testimonials, users, emailLogs } from '@/lib/db/schema';
 import { eq, count } from 'drizzle-orm';
 import { Card, CardTitle, CardContent } from '@/components/ui/Card';
 
@@ -20,6 +20,14 @@ export default async function AdminDashboard() {
     .where(eq(submissions.read, false));
   const [testimonialsCount] = await db.select({ count: count() }).from(testimonials);
   const [usersCount] = await db.select({ count: count() }).from(users);
+  const [emailsSentCount] = await db
+    .select({ count: count() })
+    .from(emailLogs)
+    .where(eq(emailLogs.status, 'sent'));
+  const [emailsFailedCount] = await db
+    .select({ count: count() })
+    .from(emailLogs)
+    .where(eq(emailLogs.status, 'failed'));
 
   return (
     <div>
@@ -70,6 +78,18 @@ export default async function AdminDashboard() {
             <CardTitle className="text-lg mb-2">Users</CardTitle>
             <CardContent>
               <p className="text-4xl font-bold text-navy">{usersCount.count}</p>
+            </CardContent>
+          </Card>
+        </Link>
+
+        <Link href="/admin/emails">
+          <Card className="hover:shadow-xl transition-shadow cursor-pointer">
+            <CardTitle className="text-lg mb-2">Emails</CardTitle>
+            <CardContent>
+              <p className="text-4xl font-bold text-navy">{emailsSentCount.count}</p>
+              <p className="text-sm text-warm-gray mt-2">
+                {emailsFailedCount.count} failed
+              </p>
             </CardContent>
           </Card>
         </Link>

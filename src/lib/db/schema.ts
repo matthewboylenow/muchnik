@@ -54,6 +54,18 @@ export const testimonials = pgTable('testimonials', {
   updatedAt: timestamp('updated_at').defaultNow().notNull(),
 });
 
+// Email Logs
+export const emailLogs = pgTable('email_logs', {
+  id: uuid('id').primaryKey().defaultRandom(),
+  toAddress: text('to_address').notNull(),
+  subject: text('subject').notNull(),
+  type: text('type').notNull(), // 'contact_notification' | 'contact_confirmation'
+  status: text('status').notNull(), // 'sent' | 'failed'
+  messageId: text('message_id'),
+  error: text('error'),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+});
+
 // Contact Form Submissions
 export const submissions = pgTable('submissions', {
   id: uuid('id').primaryKey().defaultRandom(),
