@@ -58,10 +58,22 @@ export default async function AdminLayout({
               Submissions
             </Link>
             <Link
+              href="/admin/testimonials"
+              className="block py-2 px-4 rounded hover:bg-navy-light transition-colors"
+            >
+              Testimonials
+            </Link>
+            <Link
               href="/admin/analytics"
               className="block py-2 px-4 rounded hover:bg-navy-light transition-colors"
             >
               Analytics
+            </Link>
+            <Link
+              href="/admin/wordpress-import"
+              className="block py-2 px-4 rounded hover:bg-navy-light transition-colors"
+            >
+              WP Import
             </Link>
           </nav>
 

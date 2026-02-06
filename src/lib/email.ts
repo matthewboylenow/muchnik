@@ -1,6 +1,14 @@
-import { Resend } from 'resend';
+import { SESClient, SendEmailCommand } from '@aws-sdk/client-ses';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const ses = new SESClient({
+  region: process.env.AWS_SES_REGION || 'us-east-1',
+  credentials: {
+    accessKeyId: process.env.AWS_SES_ACCESS_KEY_ID!,
+    secretAccessKey: process.env.AWS_SES_SECRET_ACCESS_KEY!,
+  },
+});
+
+const fromAddress = `${process.env.AWS_SES_FROM_NAME || 'Muchnik Elder Law'} <${process.env.AWS_SES_FROM_EMAIL || 'noreply@muchnikelderlaw.com'}>`;
 
 interface SendContactNotificationProps {
   firstName: string;
@@ -12,11 +20,18 @@ interface SendContactNotificationProps {
 }
 
 export async function sendContactNotification(data: SendContactNotificationProps) {
-  return await resend.emails.send({
-    from: 'Muchnik Elder Law <noreply@muchnikelderlaw.com>',
-    to: process.env.CONTACT_EMAIL!,
-    subject: `New Contact Form Submission from ${data.firstName} ${data.lastName}`,
-    html: `
+  const command = new SendEmailCommand({
+    Source: fromAddress,
+    Destination: {
+      ToAddresses: [process.env.CONTACT_EMAIL!],
+    },
+    Message: {
+      Subject: {
+        Data: `New Contact Form Submission from ${data.firstName} ${data.lastName}`,
+      },
+      Body: {
+        Html: {
+          Data: `
       <h2>New Contact Form Submission</h2>
       <p><strong>Name:</strong> ${data.firstName} ${data.lastName}</p>
       <p><strong>Email:</strong> ${data.email}</p>
@@ -25,15 +40,27 @@ export async function sendContactNotification(data: SendContactNotificationProps
       <h3>Case Description:</h3>
       <p>${data.caseDescription || 'Not provided'}</p>
     `,
+        },
+      },
+    },
   });
+
+  return await ses.send(command);
 }
 
 export async function sendContactConfirmation(firstName: string, email: string) {
-  return await resend.emails.send({
-    from: 'Muchnik Elder Law <noreply@muchnikelderlaw.com>',
-    to: email,
-    subject: 'Thank you for contacting Muchnik Elder Law',
-    html: `
+  const command = new SendEmailCommand({
+    Source: fromAddress,
+    Destination: {
+      ToAddresses: [email],
+    },
+    Message: {
+      Subject: {
+        Data: 'Thank you for contacting Muchnik Elder Law',
+      },
+      Body: {
+        Html: {
+          Data: `
       <h2>Thank you for reaching out, ${firstName}!</h2>
       <p>We have received your message and will get back to you within 1-2 business days.</p>
       <p>If your matter is urgent, please call us directly:</p>
@@ -44,5 +71,10 @@ export async function sendContactConfirmation(firstName: string, email: string) 
       </ul>
       <p>Best regards,<br>Muchnik Elder Law P.C.</p>
     `,
+        },
+      },
+    },
   });
+
+  return await ses.send(command);
 }

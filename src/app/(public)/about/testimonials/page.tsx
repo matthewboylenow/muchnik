@@ -1,6 +1,10 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
-import { testimonials } from '@/data/testimonials';
+import { db } from '@/lib/db';
+import { testimonials } from '@/lib/db/schema';
+import { eq, asc } from 'drizzle-orm';
+
+export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: 'Testimonials | About Us',
@@ -25,7 +29,13 @@ function StarRating({ rating }: { rating: number }) {
   );
 }
 
-export default function TestimonialsPage() {
+export default async function TestimonialsPage() {
+  const allTestimonials = await db
+    .select()
+    .from(testimonials)
+    .where(eq(testimonials.published, true))
+    .orderBy(asc(testimonials.order));
+
   return (
     <div>
       {/* Hero Section */}
@@ -53,16 +63,16 @@ export default function TestimonialsPage() {
       {/* Testimonials Section */}
       <section className="section-padding bg-cream">
         <div className="container-custom">
-          {testimonials.length > 0 ? (
+          {allTestimonials.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {testimonials.map((testimonial) => (
+              {allTestimonials.map((testimonial) => (
                 <div
                   key={testimonial.id}
                   className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
                 >
                   <StarRating rating={testimonial.rating} />
                   <p className="mt-4 text-charcoal leading-relaxed">
-                    "{testimonial.text}"
+                    &ldquo;{testimonial.text}&rdquo;
                   </p>
                   <div className="mt-4 pt-4 border-t border-gray-100">
                     <p className="font-semibold text-navy">{testimonial.name}</p>

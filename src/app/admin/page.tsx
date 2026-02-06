@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { db } from '@/lib/db';
-import { posts, videos, submissions } from '@/lib/db/schema';
+import { posts, videos, submissions, testimonials } from '@/lib/db/schema';
 import { eq, count } from 'drizzle-orm';
 import { Card, CardTitle, CardContent } from '@/components/ui/Card';
 
@@ -18,6 +18,7 @@ export default async function AdminDashboard() {
     .select({ count: count() })
     .from(submissions)
     .where(eq(submissions.read, false));
+  const [testimonialsCount] = await db.select({ count: count() }).from(testimonials);
 
   return (
     <div>
@@ -54,6 +55,17 @@ export default async function AdminDashboard() {
           </Card>
         </Link>
 
+        <Link href="/admin/testimonials">
+          <Card className="hover:shadow-xl transition-shadow cursor-pointer">
+            <CardTitle className="text-lg mb-2">Testimonials</CardTitle>
+            <CardContent>
+              <p className="text-4xl font-bold text-navy">{testimonialsCount.count}</p>
+            </CardContent>
+          </Card>
+        </Link>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         <Card>
           <CardTitle className="text-lg mb-2">Quick Actions</CardTitle>
           <CardContent>
@@ -69,6 +81,12 @@ export default async function AdminDashboard() {
                 className="block text-gold hover:text-gold-dark"
               >
                 + New Video
+              </Link>
+              <Link
+                href="/admin/testimonials/new"
+                className="block text-gold hover:text-gold-dark"
+              >
+                + New Testimonial
               </Link>
             </div>
           </CardContent>

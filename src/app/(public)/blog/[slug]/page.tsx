@@ -6,6 +6,7 @@ import { posts } from '@/lib/db/schema';
 import { eq, and } from 'drizzle-orm';
 import { formatDate } from '@/lib/utils';
 import { Button } from '@/components/ui/Button';
+import { BlogPostJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -26,9 +27,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const title = post.metaTitle || post.title;
+  const description = post.metaDescription || post.excerpt || undefined;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://muchnikelderlaw.com';
+
   return {
-    title: post.metaTitle || post.title,
-    description: post.metaDescription || post.excerpt || undefined,
+    title,
+    description,
+    openGraph: {
+      type: 'article',
+      title,
+      description,
+      url: `${siteUrl}/blog/${post.slug}`,
+      ...(post.featuredImage && {
+        images: [{ url: post.featuredImage, alt: post.title }],
+      }),
+      publishedTime: post.publishedAt?.toISOString(),
+      modifiedTime: post.updatedAt.toISOString(),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      ...(post.featuredImage && { images: [post.featuredImage] }),
+    },
   };
 }
 
@@ -43,8 +65,25 @@ export default async function BlogPostPage({ params }: Props) {
     notFound();
   }
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://muchnikelderlaw.com';
+
   return (
     <div>
+      <BlogPostJsonLd
+        title={post.title}
+        description={post.metaDescription || post.excerpt || ''}
+        publishedAt={post.publishedAt || post.createdAt}
+        updatedAt={post.updatedAt}
+        imageUrl={post.featuredImage || undefined}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', url: siteUrl },
+          { name: 'Blog', url: `${siteUrl}/blog` },
+          { name: post.title, url: `${siteUrl}/blog/${post.slug}` },
+        ]}
+      />
+
       {/* Hero Section */}
       <section className="bg-navy text-white py-16">
         <div className="container-custom max-w-4xl">
@@ -52,7 +91,7 @@ export default async function BlogPostPage({ params }: Props) {
             href="/blog"
             className="text-gold hover:text-gold-light mb-4 inline-block"
           >
-            ← Back to Blog
+            &larr; Back to Blog
           </Link>
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
           {post.publishedAt && (

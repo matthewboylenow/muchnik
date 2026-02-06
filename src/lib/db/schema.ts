@@ -1,4 +1,4 @@
-import { pgTable, text, timestamp, uuid, boolean, serial } from 'drizzle-orm/pg-core';
+import { pgTable, text, timestamp, uuid, boolean, serial, integer } from 'drizzle-orm/pg-core';
 
 // Admin Users
 export const users = pgTable('users', {
@@ -35,6 +35,20 @@ export const videos = pgTable('videos', {
   bunnyVideoId: text('bunny_video_id').notNull(), // Bunny.net video ID or embed URL
   thumbnailUrl: text('thumbnail_url'), // Vercel Blob URL
   published: boolean('published').default(false),
+  order: serial('order'),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
+});
+
+// Testimonials / Reviews
+export const testimonials = pgTable('testimonials', {
+  id: uuid('id').primaryKey().defaultRandom(),
+  name: text('name').notNull(),
+  rating: integer('rating').notNull(),
+  text: text('text').notNull(),
+  date: text('date'), // e.g. "January 2024"
+  source: text('source'), // e.g. "Google"
+  published: boolean('published').default(true),
   order: serial('order'),
   createdAt: timestamp('created_at').defaultNow().notNull(),
   updatedAt: timestamp('updated_at').defaultNow().notNull(),

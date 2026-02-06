@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
@@ -7,6 +8,26 @@ import { FadeIn } from '@/components/ui/FadeIn';
 import { RotatingBackground } from '@/components/ui/RotatingBackground';
 import { ClientMap } from '@/components/ui/ClientMap';
 import { locations } from '@/data/locations';
+
+export const metadata: Metadata = {
+  title: 'Muchnik Elder Law P.C. | Elder Law & Estate Planning Attorneys in NY & NJ',
+  description:
+    'For over 30 years, Muchnik Elder Law P.C. has provided expert legal guidance in elder law, Medicaid planning, estate planning, probate, and guardianships. Serving Staten Island, Manhattan, and Randolph, NJ.',
+  openGraph: {
+    title: 'Muchnik Elder Law P.C. | Elder Law & Estate Planning Attorneys in NY & NJ',
+    description:
+      'For over 30 years, Muchnik Elder Law P.C. has provided expert legal guidance in elder law, Medicaid planning, estate planning, probate, and guardianships.',
+    url: 'https://muchnikelderlaw.com',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Muchnik Elder Law P.C.' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Muchnik Elder Law P.C. | Elder Law & Estate Planning Attorneys',
+    description:
+      'Expert elder law, Medicaid planning, estate planning, and guardianship attorneys serving NY & NJ for over 30 years.',
+    images: ['/og-image.jpg'],
+  },
+};
 
 export default function HomePage() {
   return (
