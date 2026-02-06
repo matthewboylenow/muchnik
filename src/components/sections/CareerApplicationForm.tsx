@@ -26,6 +26,7 @@ interface FormData {
   position: string;
   message: string;
   resumeLink: string;
+  website: string;
 }
 
 export function CareerApplicationForm() {
@@ -37,6 +38,7 @@ export function CareerApplicationForm() {
     position: '',
     message: '',
     resumeLink: '',
+    website: '',
   });
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
@@ -62,6 +64,7 @@ export function CareerApplicationForm() {
         position: '',
         message: '',
         resumeLink: '',
+        website: '',
       });
 
       setTimeout(() => setStatus('idle'), 5000);
@@ -73,6 +76,19 @@ export function CareerApplicationForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {/* Honeypot field - hidden from real users, bots will fill it */}
+      <div className="absolute opacity-0 -z-10" aria-hidden="true">
+        <label htmlFor="career-website">Website</label>
+        <input
+          type="text"
+          id="career-website"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+          value={formData.website}
+          onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+        />
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Input
           label="First Name"

@@ -30,7 +30,13 @@ export async function POST(request: Request) {
     }
 
     const body = await request.json();
-    const { firstName, lastName, email, phone, position, message, resumeLink } = body;
+    const { firstName, lastName, email, phone, position, message, resumeLink, website } = body;
+
+    // Honeypot check - if filled, it's a bot
+    if (website) {
+      // Return success to not tip off the bot, but don't process
+      return NextResponse.json({ success: true });
+    }
 
     if (!firstName || !lastName || !email || !position) {
       return NextResponse.json(

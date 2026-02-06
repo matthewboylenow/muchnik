@@ -33,7 +33,13 @@ export async function POST(request: Request) {
     }
 
     const body = await request.json();
-    const { firstName, lastName, email, phone, caseDescription, howDidYouHear } = body;
+    const { firstName, lastName, email, phone, caseDescription, howDidYouHear, website } = body;
+
+    // Honeypot check - if filled, it's a bot
+    if (website) {
+      // Return success to not tip off the bot, but don't process
+      return NextResponse.json({ success: true, id: 0 });
+    }
 
     // Validate required fields
     if (!firstName || !lastName || !email) {
