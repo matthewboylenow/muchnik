@@ -28,6 +28,7 @@ export interface TeamMember {
   name: string;
   title: string;
   image?: string;
+  imagePosition?: string;
   bio: string;
   isDeceased?: boolean;
 }

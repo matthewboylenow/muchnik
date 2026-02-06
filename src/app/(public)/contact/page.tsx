@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { ContactForm } from '@/components/sections/ContactForm';
 import { locations } from '@/data/locations';
 import { ClientMap } from '@/components/ui/ClientMap';
@@ -93,17 +94,14 @@ export default function ContactPage() {
               <div className="mt-8 bg-gradient-to-br from-burgundy to-burgundy/90 text-white rounded-xl p-6 md:p-8 shadow-lg">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                      <svg className="w-8 h-8" viewBox="0 0 48 36" fill="none">
-                        <rect width="48" height="36" rx="2" fill="#B22234"/>
-                        <rect y="5.54" width="48" height="2.77" fill="white"/>
-                        <rect y="11.08" width="48" height="2.77" fill="white"/>
-                        <rect y="16.62" width="48" height="2.77" fill="white"/>
-                        <rect y="22.15" width="48" height="2.77" fill="white"/>
-                        <rect y="27.69" width="48" height="2.77" fill="white"/>
-                        <rect y="33.23" width="48" height="2.77" fill="white"/>
-                        <rect width="20" height="19.38" fill="#3C3B6E"/>
-                      </svg>
+                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center overflow-hidden">
+                      <Image
+                        src="/images/Flag_of_the_United_States.svg"
+                        alt="American Flag"
+                        width={36}
+                        height={24}
+                        className="object-contain"
+                      />
                     </div>
                   </div>
                   <div>

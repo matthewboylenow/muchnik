@@ -6,6 +6,7 @@ import { Card, CardTitle, CardContent } from '@/components/ui/Card';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { ClientMap } from '@/components/ui/ClientMap';
 import { locations } from '@/data/locations';
+import Image from 'next/image';
 import { HomeHero } from '@/components/sections/HomeHero';
 
 export const metadata: Metadata = {
@@ -156,17 +157,14 @@ export default function HomePage() {
               }}></div>
             </div>
             <div className="relative">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-full mb-6">
-                <svg className="w-12 h-12" viewBox="0 0 48 36" fill="none">
-                  <rect width="48" height="36" rx="2" fill="#B22234"/>
-                  <rect y="5.54" width="48" height="2.77" fill="white"/>
-                  <rect y="11.08" width="48" height="2.77" fill="white"/>
-                  <rect y="16.62" width="48" height="2.77" fill="white"/>
-                  <rect y="22.15" width="48" height="2.77" fill="white"/>
-                  <rect y="27.69" width="48" height="2.77" fill="white"/>
-                  <rect y="33.23" width="48" height="2.77" fill="white"/>
-                  <rect width="20" height="19.38" fill="#3C3B6E"/>
-                </svg>
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-full mb-6 overflow-hidden">
+                <Image
+                  src="/images/Flag_of_the_United_States.svg"
+                  alt="American Flag"
+                  width={52}
+                  height={36}
+                  className="object-contain"
+                />
               </div>
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
                 Honoring Those Who Served
@@ -266,7 +264,7 @@ export default function HomePage() {
               Elder Law Attorneys Serving NY & NJ
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto">
-              Conveniently located in Staten Island, Manhattan, and Randolph, NJ. Our experienced attorneys are ready to help with your elder law and estate planning needs.
+              Conveniently located in Staten Island (NY), Manhattan (NY) and Randolph (NJ). Our experienced attorneys are ready to help with your elder law and estate planning needs.
             </p>
           </div>
           <ClientMap

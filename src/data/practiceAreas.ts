@@ -66,7 +66,7 @@ Whether an estate is straightforward or involves multiple properties, businesses
 We begin with a careful analysis of the facts, documents, and medical and financial records to evaluate the strength of your position. When possible, we pursue negotiated resolutions or mediation to save time, money, and family relationships. However, when litigation is necessary, we are prepared to advocate aggressively in Surrogate's Court and other courts on your behalf.
 
 Because we have a deep experience in estate planning and administration, we understand both the legal nuances and the human dynamics that often drive these conflicts. Our goal is to protect your rights, safeguard estate assets, and achieve a result that reflects both the law and the realities facing your family.`,
-    image: '/images/practice-areas/estate-litigation.jpg',
+    image: '/images/practice-areas/will-contests.jpg',
   },
   {
     id: 'special-needs',

@@ -48,7 +48,8 @@ export default function OurTeamPage() {
                           src={member.image}
                           alt={member.name}
                           fill
-                          className="object-cover object-top"
+                          className="object-cover"
+                          style={{ objectPosition: member.imagePosition || 'center top' }}
                         />
                       </div>
                     </div>

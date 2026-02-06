@@ -61,13 +61,14 @@ export function HomeHero() {
       {/* Hero Content */}
       <div className="relative container-custom py-24 md:py-32 lg:py-40">
         <div className="max-w-3xl">
-          <div className="mb-6 h-8">
+          <div className="mb-6 h-10 md:h-12">
             {heroSlides.map((slide, index) => (
               <span
                 key={slide.caption}
-                className={`inline-block text-gold text-sm md:text-base font-semibold tracking-wider uppercase transition-opacity duration-700 ${
+                className={`inline-block text-gold-light text-lg md:text-2xl lg:text-3xl font-bold tracking-wider uppercase transition-opacity duration-700 ${
                   index === currentIndex ? 'opacity-100' : 'opacity-0 absolute'
                 }`}
+                style={{ textShadow: '0 1px 3px rgba(0,0,0,0.6)' }}
               >
                 {slide.caption}
               </span>

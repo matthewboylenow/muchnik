@@ -6,6 +6,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Kirill Muchnik, Esq.',
     title: 'Managing Partner',
     image: '/images/team/new/Kirill.PNG',
+    imagePosition: 'center 20%',
     bio: `Kirill Muchnik is a managing partner of the Firm and concentrates in Elder Law, Estate Planning, Estate Administration, Surrogate's Court litigation, Special Needs Planning, Guardianships and Real Estate.
 
 Mr. Muchnik grew up in Brooklyn, NY, arriving with his family to the United States in 1992 from the Ukraine. He is fluent in the Russian language and conversational in Ukrainian. After receiving a Bachelor of Business Administration from Baruch College in 2009, with a major in Finance and Investments, Mr. Muchnik worked as a financial services representative for MetLife where he developed knowledge of insurance and investment products. Mr. Muchnik's passion to help guide individuals through the legal and financial challenges is the force that propelled his decision to enter law school. During his studies at Albany Law School, he interned at The Ayco Company, L.P., A Goldman Sachs Company, assisting financial advisors with providing investment services, retirement and tax planning.
@@ -68,6 +69,7 @@ Mrs. Polito's dedication, reliability, and decades of experience make her an int
     name: 'Kathleen Corbett',
     title: 'Legal Secretary',
     image: '/images/team/new/Kathleen.jpg',
+    imagePosition: 'center 15%',
     bio: `Kathleen Corbett has been a legal secretary with Muchnik Elder Law P.C. since August of 2023.
 
 Ms. Corbett provides detailed administrative and operational support to ensure the efficient management and closing of client matters. She plays an important role in maintaining accuracy, organization, and consistency across the firm's legal and administrative processes.

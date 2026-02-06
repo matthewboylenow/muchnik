@@ -64,28 +64,43 @@ export default async function TestimonialsPage() {
       <section className="section-padding bg-cream">
         <div className="container-custom">
           {allTestimonials.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {allTestimonials.map((testimonial) => (
-                <div
-                  key={testimonial.id}
-                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
-                >
-                  <StarRating rating={testimonial.rating} />
-                  <p className="mt-4 text-charcoal leading-relaxed">
-                    &ldquo;{testimonial.text}&rdquo;
-                  </p>
-                  <div className="mt-4 pt-4 border-t border-gray-100">
-                    <p className="font-semibold text-navy">{testimonial.name}</p>
-                    {testimonial.date && (
-                      <p className="text-sm text-gray-500">
-                        {testimonial.date}
-                        {testimonial.source && ` via ${testimonial.source}`}
-                      </p>
-                    )}
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {allTestimonials.map((testimonial) => (
+                  <div
+                    key={testimonial.id}
+                    className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
+                  >
+                    <StarRating rating={testimonial.rating} />
+                    <p className="mt-4 text-charcoal leading-relaxed">
+                      &ldquo;{testimonial.text}&rdquo;
+                    </p>
+                    <div className="mt-4 pt-4 border-t border-gray-100">
+                      <p className="font-semibold text-navy">{testimonial.name}</p>
+                      {testimonial.date && (
+                        <p className="text-sm text-gray-500">
+                          {testimonial.date}
+                          {testimonial.source && ` via ${testimonial.source}`}
+                        </p>
+                      )}
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+              <div className="text-center mt-12">
+                <a
+                  href="https://www.google.com/search?q=Muchnik+Elder+Law+P.C.+reviews"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy-dark transition-colors"
+                >
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" />
+                  </svg>
+                  View More Reviews on Google
+                </a>
+              </div>
+            </>
           ) : (
             <div className="max-w-2xl mx-auto text-center">
               <div className="bg-white rounded-xl p-8 md:p-12 shadow-lg">
