@@ -159,7 +159,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-full mb-6 overflow-hidden">
                 <Image
-                  src="/images/Flag_of_the_United_States.svg"
+                  src="/images/Flag_of_the_United_States.png"
                   alt="American Flag"
                   width={52}
                   height={36}

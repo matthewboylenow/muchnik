@@ -96,7 +96,7 @@ export default function ContactPage() {
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center overflow-hidden">
                       <Image
-                        src="/images/Flag_of_the_United_States.svg"
+                        src="/images/Flag_of_the_United_States.png"
                         alt="American Flag"
                         width={36}
                         height={24}
