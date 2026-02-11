@@ -58,6 +58,30 @@ export default function TheFirmPage() {
         </div>
       </section>
 
+      {/* Predecessor Firms / Our History */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-8 text-center">
+              Our History
+            </h2>
+            <div className="bg-cream rounded-xl p-8 md:p-12 shadow-lg">
+              <div className="prose prose-lg max-w-none text-charcoal space-y-6">
+                <p className="text-lg leading-relaxed">
+                  Muchnik Elder Law P.C. has its roots in the law firm of <strong>Johnson &amp; Langworthy, P.C.</strong>, founded by Gary W. Johnson, Esq. and David J. Langworthy, Esq. The firm built a strong reputation for providing compassionate and skilled legal counsel in elder law, estate planning, and related practice areas throughout New York and New Jersey.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  When Roman Muchnik, Esq. joined the firm, it became <strong>Johnson, Langworthy &amp; Muchnik, P.C.</strong>, continuing and expanding the firm&apos;s tradition of dedicated client service.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Following the passing of Gary W. Johnson, Esq. in 2014 and the retirement of David J. Langworthy, Esq., the firm was renamed <strong>Muchnik Elder Law P.C.</strong> under the leadership of Roman Muchnik. Today, the firm carries forward the values, experience, and client-centered approach established by its predecessor firms over more than three decades.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Values Section */}
       <section className="section-padding bg-cream-dark">
         <div className="container-custom">

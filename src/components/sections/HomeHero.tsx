@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 
-const heroSlides = [
+const heroSlides: { image: string; caption: string; objectPosition?: string }[] = [
   {
     image: '/images/hero/homepage/Staten-Island-Ferry.jpg',
     caption: 'Experience Matters',
@@ -17,6 +17,7 @@ const heroSlides = [
   {
     image: '/images/hero/homepage/Photoshopped-IMG-0797-3-2-scaled.jpg',
     caption: 'Helping Clients Make the Right Decisions',
+    objectPosition: '65% 50%',
   },
 ];
 
@@ -48,6 +49,7 @@ export function HomeHero() {
                   alt={`Muchnik Elder Law ${index + 1}`}
                   fill
                   className="object-cover"
+                  style={slide.objectPosition ? { objectPosition: slide.objectPosition } : undefined}
                   priority={index === 0}
                   quality={90}
                 />
