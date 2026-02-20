@@ -68,13 +68,13 @@ export default function TheFirmPage() {
             <div className="bg-cream rounded-xl p-8 md:p-12 shadow-lg">
               <div className="prose prose-lg max-w-none text-charcoal space-y-6">
                 <p className="text-lg leading-relaxed">
-                  Muchnik Elder Law P.C. has its roots in the law firm of <strong>Johnson &amp; Langworthy, P.C.</strong>, founded by Gary W. Johnson, Esq. and David J. Langworthy, Esq. The firm built a strong reputation for providing compassionate and skilled legal counsel in elder law, estate planning, and related practice areas throughout New York and New Jersey.
+                  Muchnik Elder Law P.C. has its roots in the law firm of <strong>Johnson &amp; Langworthy, P.C.</strong>, founded by Gary W. Johnson, Esq. The firm, which included Leslie M. Langworthy, Esq., built a strong reputation for providing compassionate and skilled legal counsel in elder law, estate planning, and related practice areas throughout New York and New Jersey.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  When Roman Muchnik, Esq. joined the firm, it became <strong>Johnson, Langworthy &amp; Muchnik, P.C.</strong>, continuing and expanding the firm&apos;s tradition of dedicated client service.
+                  Kirill Muchnik, Esq. joined <strong>Johnson &amp; Langworthy, P.C.</strong> and, upon becoming a partner, the firm became <strong>Johnson, Langworthy &amp; Muchnik, P.C.</strong>, continuing and expanding the firm&apos;s tradition of dedicated client service.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Following the passing of Gary W. Johnson, Esq. in 2014 and the retirement of David J. Langworthy, Esq., the firm was renamed <strong>Muchnik Elder Law P.C.</strong> under the leadership of Roman Muchnik. Today, the firm carries forward the values, experience, and client-centered approach established by its predecessor firms over more than three decades.
+                  Following the passing of Gary W. Johnson, Esq. in 2014 and the retirement of Leslie M. Langworthy, Esq., the firm was renamed <strong>Muchnik Elder Law P.C.</strong> under the leadership of Kirill Muchnik. Today, the firm carries forward the values, experience, and client-centered approach established by its predecessor firms over more than three decades.
                 </p>
               </div>
             </div>
