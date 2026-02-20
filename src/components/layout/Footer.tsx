@@ -62,7 +62,7 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.youtube.com/"
+                href="https://www.youtube.com/@muchnikelderlaw"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
