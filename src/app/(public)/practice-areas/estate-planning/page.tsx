@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     description: 'Comprehensive estate planning services including wills, trusts, and advance directives.',
     images: ['/images/practice-areas/estate-planning.jpg'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Estate Planning, Trusts & Wills | Muchnik Elder Law P.C.',
+    description: 'Comprehensive estate planning services including wills, trusts, and advance directives.',
+    images: ['/images/practice-areas/estate-planning.jpg'],
+  },
 };
 
 export default function EstatePlanningPage() {

@@ -6,6 +6,18 @@ export const metadata: Metadata = {
   title: 'The Firm | About Us',
   description:
     'Learn about Muchnik Elder Law P.C. and our commitment to serving families across New York and New Jersey for more than 30 years, together with our predecessor firms.',
+  openGraph: {
+    title: 'The Firm | Muchnik Elder Law P.C.',
+    description: 'Learn about Muchnik Elder Law P.C. and our commitment to serving families across New York and New Jersey for more than 30 years, together with our predecessor firms.',
+    url: 'https://muchnikelderlaw.com/about/the-firm',
+    images: [{ url: '/images/about/about-hero.jpg', width: 1200, height: 630, alt: 'About Muchnik Elder Law P.C.' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Firm | Muchnik Elder Law P.C.',
+    description: 'Learn about Muchnik Elder Law P.C. and our commitment to serving families across New York and New Jersey for more than 30 years, together with our predecessor firms.',
+    images: ['/images/about/about-hero.jpg'],
+  },
 };
 
 export default function TheFirmPage() {

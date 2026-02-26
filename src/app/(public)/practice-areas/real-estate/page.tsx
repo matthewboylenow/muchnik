@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     description: 'Comprehensive real estate legal services for buying and selling property.',
     images: ['/images/practice-areas/real-estate.jpg'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Real Estate Law | Muchnik Elder Law P.C.',
+    description: 'Comprehensive real estate legal services for buying and selling property.',
+    images: ['/images/practice-areas/real-estate.jpg'],
+  },
 };
 
 export default function RealEstatePage() {

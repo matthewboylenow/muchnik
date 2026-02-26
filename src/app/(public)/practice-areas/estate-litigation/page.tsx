@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     description: 'Experienced representation in will contests, trust disputes, and contested estate matters.',
     images: ['/images/practice-areas/estate-litigation.jpg'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Estate Litigation & Will Contests | Muchnik Elder Law P.C.',
+    description: 'Experienced representation in will contests, trust disputes, and contested estate matters.',
+    images: ['/images/practice-areas/estate-litigation.jpg'],
+  },
 };
 
 export default function EstateLitigationPage() {

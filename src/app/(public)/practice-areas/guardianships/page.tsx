@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     description: 'Expert guardianship legal services in New York and New Jersey.',
     images: ['/images/practice-areas/guardianships-hero.png'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Guardianships | Muchnik Elder Law P.C.',
+    description: 'Expert guardianship legal services in New York and New Jersey.',
+    images: ['/images/practice-areas/guardianships-hero.png'],
+  },
 };
 
 export default function GuardianshipsPage() {

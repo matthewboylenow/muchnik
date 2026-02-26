@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     description: 'Safeguarding a lifetime of savings from the high costs of long-term care through strategic asset protection planning.',
     images: ['/images/practice-areas/elder-law.jpg'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Elder Law & Asset Protection | Muchnik Elder Law P.C.',
+    description: 'Safeguarding a lifetime of savings from the high costs of long-term care through strategic asset protection planning.',
+    images: ['/images/practice-areas/elder-law.jpg'],
+  },
 };
 
 export default function ElderLawPage() {

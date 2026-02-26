@@ -7,6 +7,18 @@ export const metadata: Metadata = {
   title: 'Our Team | About Us',
   description:
     'Meet the experienced attorneys and staff at Muchnik Elder Law P.C. who are dedicated to serving families across New York and New Jersey.',
+  openGraph: {
+    title: 'Our Team | Muchnik Elder Law P.C.',
+    description: 'Meet the experienced attorneys and staff at Muchnik Elder Law P.C. who are dedicated to serving families across New York and New Jersey.',
+    url: 'https://muchnikelderlaw.com/about/our-team',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Muchnik Elder Law P.C. Team' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Team | Muchnik Elder Law P.C.',
+    description: 'Meet the experienced attorneys and staff at Muchnik Elder Law P.C. who are dedicated to serving families across New York and New Jersey.',
+    images: ['/og-image.jpg'],
+  },
 };
 
 export default function OurTeamPage() {

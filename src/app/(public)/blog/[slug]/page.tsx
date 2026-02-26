@@ -32,6 +32,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = post.metaDescription || post.excerpt || undefined;
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://muchnikelderlaw.com';
 
+  const ogImage = post.featuredImage || '/og-image.jpg';
+
   return {
     title,
     description,
@@ -40,9 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       url: `${siteUrl}/blog/${post.slug}`,
-      ...(post.featuredImage && {
-        images: [{ url: post.featuredImage, alt: post.title }],
-      }),
+      images: [{ url: ogImage, alt: post.title }],
       publishedTime: post.publishedAt?.toISOString(),
       modifiedTime: post.updatedAt.toISOString(),
     },
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title,
       description,
-      ...(post.featuredImage && { images: [post.featuredImage] }),
+      images: [ogImage],
     },
   };
 }

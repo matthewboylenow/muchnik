@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     description: 'Special needs planning services to protect government benefits while providing for your child\'s future.',
     images: ['/images/practice-areas/special-needs.jpg'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Special Needs Planning | Muchnik Elder Law P.C.',
+    description: 'Special needs planning services to protect government benefits while providing for your child\'s future.',
+    images: ['/images/practice-areas/special-needs.jpg'],
+  },
 };
 
 export default function SpecialNeedsPage() {

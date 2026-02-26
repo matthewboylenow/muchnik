@@ -8,6 +8,18 @@ export const metadata: Metadata = {
   title: 'Practice Areas',
   description:
     'Muchnik Elder Law P.C. specializes in Elder Law, Medicaid Planning, Estate Planning, Special Needs Planning, Guardianships, and more.',
+  openGraph: {
+    title: 'Practice Areas | Muchnik Elder Law P.C.',
+    description: 'Muchnik Elder Law P.C. specializes in Elder Law, Medicaid Planning, Estate Planning, Special Needs Planning, Guardianships, and more.',
+    url: 'https://muchnikelderlaw.com/practice-areas',
+    images: [{ url: '/images/hero/family-documents.jpg', width: 1200, height: 630, alt: 'Muchnik Elder Law P.C. Practice Areas' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Practice Areas | Muchnik Elder Law P.C.',
+    description: 'Muchnik Elder Law P.C. specializes in Elder Law, Medicaid Planning, Estate Planning, Special Needs Planning, Guardianships, and more.',
+    images: ['/images/hero/family-documents.jpg'],
+  },
 };
 
 export default function PracticeAreasPage() {

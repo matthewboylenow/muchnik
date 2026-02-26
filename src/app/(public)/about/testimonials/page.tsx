@@ -10,6 +10,18 @@ export const metadata: Metadata = {
   title: 'Testimonials | About Us',
   description:
     'Read what our clients say about their experience with Muchnik Elder Law P.C.',
+  openGraph: {
+    title: 'Testimonials | Muchnik Elder Law P.C.',
+    description: 'Read what our clients say about their experience with Muchnik Elder Law P.C.',
+    url: 'https://muchnikelderlaw.com/about/testimonials',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Muchnik Elder Law P.C. Testimonials' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Testimonials | Muchnik Elder Law P.C.',
+    description: 'Read what our clients say about their experience with Muchnik Elder Law P.C.',
+    images: ['/og-image.jpg'],
+  },
 };
 
 function StarRating({ rating }: { rating: number }) {

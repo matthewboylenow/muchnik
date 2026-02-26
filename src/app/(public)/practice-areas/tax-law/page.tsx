@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     description: 'Estate and capital gains tax planning services. Minimize your tax burden with expert attorneys.',
     images: ['/images/practice-areas/tax-law.jpg'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tax Law | Muchnik Elder Law P.C.',
+    description: 'Estate and capital gains tax planning services. Minimize your tax burden with expert attorneys.',
+    images: ['/images/practice-areas/tax-law.jpg'],
+  },
 };
 
 export default function TaxLawPage() {

@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     description: 'Expert guidance for executors, administrators, trustees, and families navigating estate administration and probate.',
     images: ['/images/practice-areas/estate-trust.jpg'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Estate Administration & Probate | Muchnik Elder Law P.C.',
+    description: 'Expert guidance for executors, administrators, trustees, and families navigating estate administration and probate.',
+    images: ['/images/practice-areas/estate-trust.jpg'],
+  },
 };
 
 export default function EstateTrustPage() {

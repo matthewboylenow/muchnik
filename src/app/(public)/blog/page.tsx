@@ -9,6 +9,18 @@ import { formatDate } from '@/lib/utils';
 export const metadata: Metadata = {
   title: 'Blog',
   description: 'Read the latest insights and updates from Muchnik Elder Law P.C. on Elder Law, Estate Planning, and Medicaid Planning.',
+  openGraph: {
+    title: 'Blog | Muchnik Elder Law P.C.',
+    description: 'Read the latest insights and updates from Muchnik Elder Law P.C. on Elder Law, Estate Planning, and Medicaid Planning.',
+    url: 'https://muchnikelderlaw.com/blog',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Muchnik Elder Law P.C.' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog | Muchnik Elder Law P.C.',
+    description: 'Read the latest insights and updates from Muchnik Elder Law P.C. on Elder Law, Estate Planning, and Medicaid Planning.',
+    images: ['/og-image.jpg'],
+  },
 };
 
 export const dynamic = 'force-dynamic';

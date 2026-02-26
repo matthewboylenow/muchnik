@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     description: 'Expert guidance through the Medicaid eligibility process for long-term care.',
     images: ['/images/practice-areas/medicaid-planning.jpg'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Medicaid Planning & Applications | Muchnik Elder Law P.C.',
+    description: 'Expert guidance through the Medicaid eligibility process for long-term care.',
+    images: ['/images/practice-areas/medicaid-planning.jpg'],
+  },
 };
 
 export default function MedicaidPlanningPage() {

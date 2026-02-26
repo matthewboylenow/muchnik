@@ -7,6 +7,18 @@ import { Card, CardTitle, CardContent } from '@/components/ui/Card';
 export const metadata: Metadata = {
   title: 'Videos',
   description: 'Watch educational videos about Elder Law, Estate Planning, and Medicaid Planning from Muchnik Elder Law P.C.',
+  openGraph: {
+    title: 'Videos | Muchnik Elder Law P.C.',
+    description: 'Watch educational videos about Elder Law, Estate Planning, and Medicaid Planning from Muchnik Elder Law P.C.',
+    url: 'https://muchnikelderlaw.com/videos',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Muchnik Elder Law P.C. Videos' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Videos | Muchnik Elder Law P.C.',
+    description: 'Watch educational videos about Elder Law, Estate Planning, and Medicaid Planning from Muchnik Elder Law P.C.',
+    images: ['/og-image.jpg'],
+  },
 };
 
 export const dynamic = 'force-dynamic';
