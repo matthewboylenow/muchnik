@@ -130,7 +130,7 @@ export function CareerApplicationForm() {
           required
           value={formData.position}
           onChange={(e) => setFormData({ ...formData, position: e.target.value })}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-shadow"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-shadow text-charcoal"
         >
           <option value="">Select a position</option>
           {positions.map((pos) => (
