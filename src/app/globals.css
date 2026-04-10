@@ -141,3 +141,7 @@
 .leaflet-container {
   @apply rounded-lg;
 }
+
+.map-darker .leaflet-tile-pane {
+  filter: brightness(0.88) contrast(1.1) saturate(1.15);
+}

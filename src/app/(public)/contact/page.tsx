@@ -6,17 +6,17 @@ import { ClientMap } from '@/components/ui/ClientMap';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Contact Muchnik Elder Law P.C. for a consultation. We have offices in Staten Island, Manhattan, and New Jersey.',
+  description: 'Contact Muchnik Elder Law P.C. for a consultation. We have offices in Staten Island, Manhattan, Montville, and Randolph.',
   openGraph: {
     title: 'Contact Us | Muchnik Elder Law P.C.',
-    description: 'Contact Muchnik Elder Law P.C. for a consultation. We have offices in Staten Island, Manhattan, and New Jersey.',
+    description: 'Contact Muchnik Elder Law P.C. for a consultation. We have offices in Staten Island, Manhattan, Montville, and Randolph.',
     url: 'https://muchnikelderlaw.com/contact',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Contact Muchnik Elder Law P.C.' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Contact Us | Muchnik Elder Law P.C.',
-    description: 'Contact Muchnik Elder Law P.C. for a consultation. We have offices in Staten Island, Manhattan, and New Jersey.',
+    description: 'Contact Muchnik Elder Law P.C. for a consultation. We have offices in Staten Island, Manhattan, Montville, and Randolph.',
     images: ['/og-image.jpg'],
   },
 };
@@ -29,7 +29,7 @@ export default function ContactPage() {
         <div className="container-custom">
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
           <p className="text-lg text-gray-200 max-w-2xl">
-            Schedule a consultation with our experienced attorneys. We have three convenient
+            Schedule a consultation with our experienced attorneys. We have four convenient
             locations to serve you.
           </p>
         </div>

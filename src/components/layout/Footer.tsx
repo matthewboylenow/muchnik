@@ -95,7 +95,7 @@ export function Footer() {
           {/* Locations */}
           <div className="lg:col-span-2">
             <h3 className="font-heading text-lg font-bold text-gold mb-4">Our Locations</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {locations.map((location) => (
                 <div key={location.id} className="text-sm">
                   <p className="font-semibold text-white mb-1">{location.name}</p>

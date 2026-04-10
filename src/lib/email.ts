@@ -155,7 +155,8 @@ export async function sendContactConfirmation(firstName: string, email: string) 
       <ul>
         <li>Staten Island: (718) 442-7004</li>
         <li>Manhattan: (212) 597-2427</li>
-        <li>New Jersey: (201) 582-8014</li>
+        <li>Montville: (201) 582-8014</li>
+        <li>Randolph: (973) 895-1175</li>
       </ul>
       <p>Best regards,<br>Muchnik Elder Law P.C.</p>
     `,

@@ -62,7 +62,7 @@ export default function TheFirmPage() {
                   We are experienced in handling sophisticated and complex estate planning and estate settlements. Many of our clients come to us referred by former clients and by our professional colleagues.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  We treat each client as an individual with unique legal challenges. With offices in Staten Island, Manhattan, and New Jersey, we serve families throughout the tri-state area.
+                  We treat each client as an individual with unique legal challenges. With offices in Staten Island, Manhattan, Randolph (NJ), and Montville (NJ), we serve families throughout the tri-state area.
                 </p>
               </div>
             </div>

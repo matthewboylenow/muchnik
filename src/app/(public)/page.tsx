@@ -263,7 +263,7 @@ export default function HomePage() {
               Elder Law Attorneys Serving NY & NJ
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto">
-              Conveniently located in Staten Island (NY), Manhattan (NY) and Randolph (NJ). Our experienced attorneys are ready to help with your elder law and estate planning needs.
+              Conveniently located in Staten Island (NY), Manhattan (NY), Montville (NJ) and Randolph (NJ). Our experienced attorneys are ready to help with your elder law and estate planning needs.
             </p>
           </div>
           <ClientMap
