@@ -20,7 +20,14 @@ export const navigation = [
       href: `/practice-areas/${area.id}`,
     }))
   },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Videos', href: '/videos' },
+  {
+    name: 'Resources',
+    href: '/blog',
+    children: [
+      { name: 'Blog', href: '/blog' },
+      { name: 'Videos', href: '/videos' },
+    ]
+  },
+  { name: 'Our Locations', href: '/contact' },
   { name: 'Contact', href: '/contact' },
 ];

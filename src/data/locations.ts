@@ -3,7 +3,7 @@ import { Location } from '@/types';
 export const locations: Location[] = [
   {
     id: 'staten-island',
-    name: 'New York Office',
+    name: 'Staten Island (NY)',
     address: '900 South Avenue',
     addressLine2: 'Executive Suites',
     city: 'Staten Island',
@@ -11,12 +11,12 @@ export const locations: Location[] = [
     zip: '10314',
     phone: '(718) 442-7004',
     phoneRaw: '7184427004',
-    phoneLabel: 'NY',
+    phoneLabel: 'Staten Island (NY)',
     coordinates: { lat: 40.6170, lng: -74.1726 },
   },
   {
     id: 'manhattan',
-    name: 'NYC Office',
+    name: 'Manhattan (NY)',
     address: '11 Broadway',
     addressLine2: 'Suite 615',
     city: 'New York',
@@ -24,12 +24,12 @@ export const locations: Location[] = [
     zip: '10004',
     phone: '(212) 597-2427',
     phoneRaw: '2125972427',
-    phoneLabel: 'NYC',
+    phoneLabel: 'Manhattan (NY)',
     coordinates: { lat: 40.7053, lng: -74.0142 },
   },
   {
     id: 'montville',
-    name: 'Montville Office',
+    name: 'Montville (NJ)',
     address: '150 River Road',
     addressLine2: 'Building O, Suite 2B',
     city: 'Montville',
@@ -42,7 +42,7 @@ export const locations: Location[] = [
   },
   {
     id: 'randolph',
-    name: 'Randolph Office',
+    name: 'Randolph (NJ)',
     address: '10 West Hanover Ave',
     addressLine2: 'Suite 111',
     city: 'Randolph',

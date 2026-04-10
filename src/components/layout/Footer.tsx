@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <footer className="bg-navy-dark text-white">
       <div className="container-custom py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Firm Info */}
           <div>
             <h3 className="font-heading text-lg font-bold text-gold mb-4">
@@ -93,9 +93,9 @@ export function Footer() {
           </div>
 
           {/* Locations */}
-          <div className="lg:col-span-2">
+          <div>
             <h3 className="font-heading text-lg font-bold text-gold mb-4">Our Locations</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {locations.map((location) => (
                 <div key={location.id} className="text-sm">
                   <p className="font-semibold text-white mb-1">{location.name}</p>

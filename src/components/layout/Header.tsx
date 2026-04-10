@@ -26,21 +26,8 @@ export function Header() {
       {/* Top Bar */}
       <div className="bg-navy text-white text-sm md:text-base py-3">
         <div className="container-custom flex flex-wrap justify-between items-center gap-2">
-          {/* Desktop: show all phone numbers inline */}
-          <div className="hidden md:flex flex-wrap gap-4 lg:gap-6 font-medium">
-            {locations.map((location) => (
-              <a
-                key={location.id}
-                href={`tel:${location.phoneRaw}`}
-                className="hover:text-gold transition-colors"
-              >
-                {location.phoneLabel || location.city}: {location.phone}
-              </a>
-            ))}
-          </div>
-
-          {/* Mobile: dropdown for phone numbers */}
-          <div className="relative md:hidden" ref={dropdownRef}>
+          {/* Call Us dropdown - all screen sizes */}
+          <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setPhoneDropdownOpen(!phoneDropdownOpen)}
               className="flex items-center gap-1.5 font-medium hover:text-gold transition-colors"
@@ -54,7 +41,7 @@ export function Header() {
               </svg>
             </button>
             {phoneDropdownOpen && (
-              <div className="absolute top-full left-0 mt-2 bg-navy border border-white/20 rounded-lg shadow-lg py-2 min-w-[220px] z-50">
+              <div className="absolute top-full left-0 mt-2 bg-navy border border-white/20 rounded-lg shadow-lg py-2 whitespace-nowrap z-50">
                 {locations.map((location) => (
                   <a
                     key={location.id}
