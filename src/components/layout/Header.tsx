@@ -46,7 +46,7 @@ export function Header() {
               </svg>
             </button>
             {phoneDropdownOpen && (
-              <div className="absolute top-full left-0 mt-2 bg-navy border border-white/20 rounded-lg shadow-lg py-2 whitespace-nowrap z-50">
+              <div className="absolute top-full left-0 pt-1 z-50"><div className="bg-navy border border-white/20 rounded-lg shadow-lg py-2 whitespace-nowrap">
                 {locations.map((location) => (
                   <a
                     key={location.id}
@@ -56,7 +56,7 @@ export function Header() {
                     {location.phoneLabel || location.city}: {location.phone}
                   </a>
                 ))}
-              </div>
+              </div></div>
             )}
           </div>
 
