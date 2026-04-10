@@ -28,6 +28,5 @@ export const navigation = [
       { name: 'Videos', href: '/videos' },
     ]
   },
-  { name: 'Our Locations', href: '/contact' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Locations & Contact', href: '/contact' },
 ];

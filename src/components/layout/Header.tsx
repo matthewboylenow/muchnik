@@ -26,8 +26,13 @@ export function Header() {
       {/* Top Bar */}
       <div className="bg-navy text-white text-sm md:text-base py-3">
         <div className="container-custom flex flex-wrap justify-between items-center gap-2">
-          {/* Call Us dropdown - all screen sizes */}
-          <div className="relative" ref={dropdownRef}>
+          {/* Call Us dropdown - hover on desktop, click on mobile */}
+          <div
+            className="relative"
+            ref={dropdownRef}
+            onMouseEnter={() => setPhoneDropdownOpen(true)}
+            onMouseLeave={() => setPhoneDropdownOpen(false)}
+          >
             <button
               onClick={() => setPhoneDropdownOpen(!phoneDropdownOpen)}
               className="flex items-center gap-1.5 font-medium hover:text-gold transition-colors"
