@@ -5,7 +5,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Navigation } from './Navigation';
 import { MobileMenu } from './MobileMenu';
-import { locations } from '@/data/locations';
 
 export function Header() {
   const [phoneDropdownOpen, setPhoneDropdownOpen] = useState(false);
@@ -47,15 +46,18 @@ export function Header() {
             </button>
             {phoneDropdownOpen && (
               <div className="absolute top-full left-0 pt-1 z-50"><div className="bg-navy border border-white/20 rounded-lg shadow-lg py-2 whitespace-nowrap">
-                {locations.map((location) => (
-                  <a
-                    key={location.id}
-                    href={`tel:${location.phoneRaw}`}
-                    className="block px-4 py-2 hover:bg-white/10 hover:text-gold transition-colors"
-                  >
-                    {location.phoneLabel || location.city}: {location.phone}
-                  </a>
-                ))}
+                <a
+                  href="tel:8772353529"
+                  className="block px-4 py-2 hover:bg-white/10 hover:text-gold transition-colors"
+                >
+                  Toll-Free: (877) 235-3529
+                </a>
+                <a
+                  href="tel:8772353529"
+                  className="block px-4 py-2 hover:bg-white/10 hover:text-gold transition-colors"
+                >
+                  Toll-Free: (877) 2ELDLAW
+                </a>
               </div></div>
             )}
           </div>
