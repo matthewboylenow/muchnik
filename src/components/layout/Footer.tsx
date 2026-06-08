@@ -18,13 +18,34 @@ export function Footer() {
               For more than 30 years, together with our predecessor firms, we have helped families with Elder Law, Medicaid Planning,
               Estate Planning, Probate and Guardianships across New York and New Jersey.
             </p>
-            <div className="space-y-2 text-sm">
-              <p>
+            <div className="space-y-1 text-sm">
+              <div className="flex gap-2">
+                <span className="font-semibold text-white shrink-0">Toll-Free:</span>
+                <span className="flex flex-col">
+                  <a
+                    href={`tel:${firmInfo.tollFreeRaw}`}
+                    className="hover:text-gold transition-colors"
+                  >
+                    {firmInfo.tollFree}
+                  </a>
+                  <a
+                    href={`tel:${firmInfo.tollFreeRaw}`}
+                    className="hover:text-gold transition-colors"
+                  >
+                    {firmInfo.tollFreeAlt}
+                  </a>
+                </span>
+              </div>
+              <p className="flex gap-2">
+                <span className="font-semibold text-white shrink-0">Fax:</span>
+                <span>{firmInfo.fax}</span>
+              </p>
+              <p className="flex gap-2">
+                <span className="font-semibold text-white shrink-0">Email:</span>
                 <a href={`mailto:${firmInfo.email}`} className="hover:text-gold transition-colors">
                   {firmInfo.email}
                 </a>
               </p>
-              <p>Fax: {firmInfo.fax}</p>
             </div>
             {/* Social Media Icons */}
             <div className="flex gap-4 mt-4">

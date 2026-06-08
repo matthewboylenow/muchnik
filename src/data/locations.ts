@@ -58,5 +58,8 @@ export const locations: Location[] = [
 export const firmInfo = {
   name: 'Muchnik Elder Law P.C.',
   email: 'office@muchnikelderlaw.com',
-  fax: '718-989-7378',
+  tollFree: '(877) 235-3529',
+  tollFreeAlt: '(877) 2ELDLAW',
+  tollFreeRaw: '8772353529',
+  fax: '(718) 989-7378',
 };
