@@ -18,6 +18,23 @@ Mr. Muchnik is a personable and compassionate advocate who is resolution-driven 
 Mr. Muchnik received his Juris Doctorate from Albany Law School in 2014 and was admitted to the Bar of the State of New York and the State of New Jersey in 2015. He is a member of the New York State Bar Association (NYSBA), the Richmond County Bar Association, the New Jersey State Bar Association (NJSBA), the Morris County Bar Association, the Bergen County Bar Association, and the National Academy of Elder Law Attorneys (NAELA) including its New York and New Jersey Chapters.`,
   },
   {
+    id: 'dana-caravela',
+    name: 'Dana Caravela, Esq.',
+    title: 'Associate Attorney',
+    image: '/images/team/new/Dana.jpg',
+    bio: `Dana Caravela is an Associate Attorney with Muchnik Elder Law P.C., focusing on Estate Planning, Elder Law, and related matters for clients in New York and New Jersey.
+
+Prior to joining Muchnik Elder Law P.C., Ms. Caravela spent over 10 years representing individuals and families, including drafting Wills, Powers of Attorney, Health Care Proxies, and Living Wills, and handling commercial and residential real estate closings and contract matters.
+
+Drawing on extensive work with children in foster care and complex family law issues, Ms. Caravela brings a distinctive, empathetic perspective to estate planning, helping clients navigate sensitive family dynamics and create practical plans that protect loved ones and reflect their long-term goals.
+
+Her prior experience includes representing clients in divorce proceedings, regularly appearing in court for motions, mediations, and negotiations, and serving as a Temporary Staff Attorney with Volunteer Lawyers for Justice, where she represented low-income tenants facing eviction. Earlier, she provided pro bono representation in immigration, family, landlord-tenant, and criminal matters, and handled real estate, contract, and municipal matters, as well as representation of cooperative and condominium boards.
+
+Ms. Caravela has also served for several years as a Court Appointed Special Advocate with CASA of Union County, New Jersey, advocating for children in foster care and mentoring new advocates.
+
+She received her Juris Doctor from St. John's University School of Law and is admitted to practice in New York and New Jersey.`,
+  },
+  {
     id: 'tracey-marino',
     name: 'Tracey Marino',
     title: 'Office Manager',
