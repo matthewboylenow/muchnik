@@ -82,20 +82,6 @@ As a primary point of contact for clients, Mrs. Polito is known for her compassi
 Mrs. Polito's dedication, reliability, and decades of experience make her an integral part of the Firm and a trusted resource for both clients and attorneys alike.`,
   },
   {
-    id: 'kathleen-corbett',
-    name: 'Kathleen Corbett',
-    title: 'Legal Secretary',
-    image: '/images/team/new/Kathleen.jpg',
-    imagePosition: 'center 15%',
-    bio: `Kathleen Corbett has been a legal secretary with Muchnik Elder Law P.C. since August of 2023.
-
-Ms. Corbett provides detailed administrative and operational support to ensure the efficient management and closing of client matters. She plays an important role in maintaining accuracy, organization, and consistency across the firm's legal and administrative processes.
-
-Ms. Corbett is responsible for entering and tracking case progress records, onboarding new client files, and finalizing the closing of completed matters. Her careful documentation and monitoring support compliance and help ensure that cases move forward and conclude efficiently. She also manages reconciliation of file expenses and office inventory, contributing to effective cost control and smooth day to day office operations. In addition, Ms. Corbett assists with the firm's marketing efforts by organizing and maintaining educational materials for seminars, client presentations, and community outreach, helping to ensure that information about the firm's services is clear, accurate, and readily available.
-
-Known for her attention to detail, reliability, and strong organizational skills, Ms. Corbett is a valued support to the legal team and an integral part of the firm's administrative staff. Before joining Muchnik Elder Law, she worked at several of the largest New York City law firms, where she earned and maintained the same strong professional reputation.`,
-  },
-  {
     id: 'leslie-langworthy',
     name: 'Leslie M. Langworthy',
     title: 'Of Counsel',
