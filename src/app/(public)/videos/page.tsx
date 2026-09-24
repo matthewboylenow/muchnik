@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Videos | Muchnik Elder Law P.C.',
     description: 'Watch educational videos about Elder Law, Estate Planning, and Medicaid Planning from Muchnik Elder Law P.C.',
-    url: 'https://muchnikelderlaw.com/videos',
+    url: 'https://www.muchnikelderlaw.com/videos',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Muchnik Elder Law P.C. Videos' }],
   },
   twitter: {

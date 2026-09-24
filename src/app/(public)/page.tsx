@@ -10,14 +10,14 @@ import Image from 'next/image';
 import { HomeHero } from '@/components/sections/HomeHero';
 
 export const metadata: Metadata = {
-  title: 'Muchnik Elder Law P.C. | Elder Law & Estate Planning Attorneys in NY & NJ',
+  title: { absolute: 'Muchnik Elder Law P.C. | Elder Law & Estate Planning Attorneys in NY & NJ' },
   description:
     'For over 30 years, Muchnik Elder Law P.C., together with its predecessor firms, has provided expert legal guidance in elder law, Medicaid planning, estate planning, probate, and guardianships. Serving families in New York and New Jersey.',
   openGraph: {
     title: 'Muchnik Elder Law P.C. | Elder Law & Estate Planning Attorneys in NY & NJ',
     description:
       'For over 30 years, Muchnik Elder Law P.C., together with its predecessor firms, has provided expert legal guidance in elder law, Medicaid planning, estate planning, probate, and guardianships.',
-    url: 'https://muchnikelderlaw.com',
+    url: 'https://www.muchnikelderlaw.com',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Muchnik Elder Law P.C.' }],
   },
   twitter: {

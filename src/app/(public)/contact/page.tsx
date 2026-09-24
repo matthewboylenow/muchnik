@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact Us | Muchnik Elder Law P.C.',
     description: 'Contact Muchnik Elder Law P.C. for a consultation. We have offices in Staten Island, Manhattan, Montville, and Randolph.',
-    url: 'https://muchnikelderlaw.com/contact',
+    url: 'https://www.muchnikelderlaw.com/contact',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Contact Muchnik Elder Law P.C.' }],
   },
   twitter: {

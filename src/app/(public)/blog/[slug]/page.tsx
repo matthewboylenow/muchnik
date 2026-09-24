@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = post.metaTitle || post.title;
   const description = post.metaDescription || post.excerpt || undefined;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://muchnikelderlaw.com';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.muchnikelderlaw.com';
 
   const ogImage = post.featuredImage || '/og-image.jpg';
 
@@ -66,7 +66,7 @@ export default async function BlogPostPage({ params }: Props) {
     notFound();
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://muchnikelderlaw.com';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.muchnikelderlaw.com';
 
   return (
     <div>

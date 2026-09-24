@@ -5,7 +5,7 @@ import { eq } from 'drizzle-orm';
 import { practiceAreas } from '@/data/practiceAreas';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://muchnikelderlaw.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.muchnikelderlaw.com';
 
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [

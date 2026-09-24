@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Careers | Muchnik Elder Law P.C.',
     description: 'Join Muchnik Elder Law P.C. - We seek motivated professionals who value high-quality work, collaboration, and continuous learning.',
-    url: 'https://muchnikelderlaw.com/about/careers',
+    url: 'https://www.muchnikelderlaw.com/about/careers',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Careers at Muchnik Elder Law P.C.' }],
   },
   twitter: {

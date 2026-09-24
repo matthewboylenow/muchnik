@@ -7,7 +7,7 @@ export function LocalBusinessJsonLd() {
     name: firmInfo.name,
     description:
       'Elder Law, Estate Planning, Medicaid Planning, Probate, and Guardianship attorneys serving New York and New Jersey for over 30 years.',
-    url: 'https://muchnikelderlaw.com',
+    url: 'https://www.muchnikelderlaw.com',
     telephone: locations[0].phone,
     email: firmInfo.email,
     faxNumber: firmInfo.fax,
@@ -78,7 +78,7 @@ export function BlogPostJsonLd({
       name: firmInfo.name,
       logo: {
         '@type': 'ImageObject',
-        url: 'https://muchnikelderlaw.com/images/logo.png',
+        url: 'https://www.muchnikelderlaw.com/images/logo.png',
       },
     },
     ...(imageUrl && {
