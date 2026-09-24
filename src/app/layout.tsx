@@ -8,7 +8,10 @@ import { FathomAnalytics } from '@/components/analytics/FathomAnalytics';
 import { LocalBusinessJsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://muchnikelderlaw.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.muchnikelderlaw.com'),
+  alternates: {
+    canonical: './',
+  },
   title: {
     default: 'Muchnik Elder Law P.C. | Elder Law & Estate Planning Attorneys',
     template: '%s | Muchnik Elder Law P.C.',
@@ -30,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://muchnikelderlaw.com',
+    url: './',
     siteName: 'Muchnik Elder Law P.C.',
     title: 'Muchnik Elder Law P.C. | Elder Law & Estate Planning Attorneys',
     description:

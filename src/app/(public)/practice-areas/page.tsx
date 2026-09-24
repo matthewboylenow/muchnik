@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Practice Areas | Muchnik Elder Law P.C.',
     description: 'Muchnik Elder Law P.C. specializes in Elder Law, Medicaid Planning, Estate Planning, Special Needs Planning, Guardianships, and more.',
-    url: 'https://muchnikelderlaw.com/practice-areas',
+    url: 'https://www.muchnikelderlaw.com/practice-areas',
     images: [{ url: '/images/hero/family-documents.jpg', width: 1200, height: 630, alt: 'Muchnik Elder Law P.C. Practice Areas' }],
   },
   twitter: {

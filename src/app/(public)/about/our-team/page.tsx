@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Our Team | Muchnik Elder Law P.C.',
     description: 'Meet the experienced attorneys and staff at Muchnik Elder Law P.C. who are dedicated to serving families across New York and New Jersey.',
-    url: 'https://muchnikelderlaw.com/about/our-team',
+    url: 'https://www.muchnikelderlaw.com/about/our-team',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Muchnik Elder Law P.C. Team' }],
   },
   twitter: {

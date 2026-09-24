@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Testimonials | Muchnik Elder Law P.C.',
     description: 'Read what our clients say about their experience with Muchnik Elder Law P.C.',
-    url: 'https://muchnikelderlaw.com/about/testimonials',
+    url: 'https://www.muchnikelderlaw.com/about/testimonials',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Muchnik Elder Law P.C. Testimonials' }],
   },
   twitter: {
