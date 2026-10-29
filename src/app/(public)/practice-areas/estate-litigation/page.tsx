@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 
@@ -25,10 +26,13 @@ export default function EstateLitigationPage() {
       {/* Hero Section */}
       <section className="relative bg-navy text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/images/practice-areas/estate-litigation.jpg"
             alt="Estate Litigation & Will Contests"
-            className="w-full h-full object-cover opacity-30"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover opacity-30"
           />
         </div>
         <div className="relative container-custom py-20 md:py-28">

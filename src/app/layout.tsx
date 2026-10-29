@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Inter, Playfair_Display } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
@@ -6,6 +7,19 @@ import { Footer } from '@/components/layout/Footer';
 import { AccessibilityWidget } from '@/components/accessibility/AccessibilityWidget';
 import { FathomAnalytics } from '@/components/analytics/FathomAnalytics';
 import { LocalBusinessJsonLd } from '@/components/seo/JsonLd';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  style: ['normal', 'italic'],
+  variable: '--font-heading',
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-body',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.muchnikelderlaw.com'),
@@ -72,7 +86,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={`${playfair.variable} ${inter.variable}`} suppressHydrationWarning>
       <head>
         <LocalBusinessJsonLd />
       </head>
