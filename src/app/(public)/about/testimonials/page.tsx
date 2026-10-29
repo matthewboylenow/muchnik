@@ -4,7 +4,7 @@ import { db } from '@/lib/db';
 import { testimonials } from '@/lib/db/schema';
 import { eq, asc } from 'drizzle-orm';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: 'Testimonials | About Us',
@@ -42,11 +42,16 @@ function StarRating({ rating }: { rating: number }) {
 }
 
 export default async function TestimonialsPage() {
-  const allTestimonials = await db
-    .select()
-    .from(testimonials)
-    .where(eq(testimonials.published, true))
-    .orderBy(asc(testimonials.order));
+  let allTestimonials: (typeof testimonials.$inferSelect)[] = [];
+  try {
+    allTestimonials = await db
+      .select()
+      .from(testimonials)
+      .where(eq(testimonials.published, true))
+      .orderBy(asc(testimonials.order));
+  } catch (error) {
+    console.error('Error fetching testimonials:', error);
+  }
 
   return (
     <div>

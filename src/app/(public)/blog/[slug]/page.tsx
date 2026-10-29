@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { db } from '@/lib/db';
 import { posts } from '@/lib/db/schema';
 import { eq, and } from 'drizzle-orm';
@@ -13,7 +14,7 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 300;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
@@ -105,9 +106,12 @@ export default async function BlogPostPage({ params }: Props) {
       {post.featuredImage && (
         <section className="py-8 bg-cream">
           <div className="container-custom max-w-4xl">
-            <img
+            <Image
               src={post.featuredImage}
               alt={post.title}
+              width={1200}
+              height={675}
+              sizes="(max-width: 896px) 100vw, 896px"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>

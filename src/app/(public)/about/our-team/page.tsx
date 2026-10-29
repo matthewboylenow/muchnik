@@ -60,6 +60,7 @@ export default function OurTeamPage() {
                           src={member.image}
                           alt={member.name}
                           fill
+                          sizes="192px"
                           className="object-cover"
                           style={{ objectPosition: member.imagePosition || 'center top' }}
                         />
