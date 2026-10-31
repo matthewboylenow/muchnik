@@ -18,5 +18,9 @@ interface ClientMapProps {
 }
 
 export function ClientMap(props: ClientMapProps) {
-  return <Map {...props} />;
+  return (
+    <div style={{ height: props.height || '400px' }}>
+      <Map {...props} height="100%" />
+    </div>
+  );
 }
