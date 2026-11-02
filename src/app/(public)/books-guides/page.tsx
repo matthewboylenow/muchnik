@@ -70,14 +70,15 @@ export default function BooksGuidesPage() {
                           href={guide.file}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="relative block w-56 aspect-[3/4] rounded-lg overflow-hidden shadow-lg bg-gray-200"
+                          className="block w-56 rounded-lg overflow-hidden shadow-lg"
                         >
                           <Image
                             src={guide.cover}
                             alt={`${guide.title} cover`}
-                            fill
+                            width={935}
+                            height={1210}
                             sizes="224px"
-                            className="object-cover"
+                            className="w-full h-auto"
                           />
                         </a>
                       </div>
