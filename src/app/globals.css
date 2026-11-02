@@ -139,5 +139,5 @@
 }
 
 .map-darker .leaflet-tile-pane {
-  filter: brightness(0.88) contrast(1.1) saturate(1.15);
+  filter: saturate(0.75) brightness(0.96);
 }
