@@ -65,7 +65,7 @@ export default function BooksGuidesPage() {
                     } gap-8`}
                   >
                     {guide.cover && (
-                      <div className="flex justify-center md:justify-start">
+                      <div className="flex justify-center md:justify-start items-start">
                         <a
                           href={guide.file}
                           target="_blank"
@@ -97,12 +97,9 @@ export default function BooksGuidesPage() {
                             {paragraph}
                           </p>
                         ))}
-                        <div className="flex flex-wrap gap-4 mt-6">
-                          <a href={guide.file} target="_blank" rel="noopener noreferrer">
-                            <Button>Read Online</Button>
-                          </a>
+                        <div className="mt-6">
                           <a href={guide.file} download>
-                            <Button variant="outline">Download PDF</Button>
+                            <Button>Download PDF</Button>
                           </a>
                         </div>
                       </CardContent>
