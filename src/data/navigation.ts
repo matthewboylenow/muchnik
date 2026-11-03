@@ -26,6 +26,7 @@ export const navigation = [
     children: [
       { name: 'Blog', href: '/blog' },
       { name: 'Videos', href: '/videos' },
+      { name: 'Books & Guides', href: '/books-guides' },
     ]
   },
   { name: 'Locations & Contact', href: '/contact' },
